@@ -1,4 +1,4 @@
-name: Step 2
+name: Step 3
 
 on:
   workflow_dispatch:
@@ -6,26 +6,25 @@ on:
     branches:
       - main
     paths:
-      - '.github/instructions/**'
+      - '.github/prompts/**'
 
 permissions:
-  contents: write
+  contents: read
   actions: write
   issues: write
 
 env:
-  STEP_3_FILE: ".github/steps/3-step.md"
+  STEP_4_FILE: ".github/steps/4-step.md"
 
 jobs:
   find_exercise:
     name: Find Exercise Issue
     uses: skills/exercise-toolkit/.github/workflows/find-exercise-issue.yml@v0.7.0
 
-  # This job is optional. We often call it a "grading job". If the step is not graded, remove it.
   check_step_work:
     name: Check step work
-    runs-on: ubuntu-latest
     needs: [find_exercise]
+    runs-on: ubuntu-latest
     env:
       ISSUE_REPOSITORY: ${{ github.repository }}
       ISSUE_NUMBER: ${{ needs.find_exercise.outputs.issue-number }}
@@ -59,20 +58,19 @@ jobs:
           edit-mode: replace
 
       # START: Check practical exercise
-      - name: Check if instruction file exists
-        id: check_instruction_file
+      - name: Check prompt file exists
+        id: check_prompt_file
         continue-on-error: true
         uses: skills/exercise-toolkit/actions/file-exists@v0.7.0
         with:
-          file: ".github/instructions/python-homework.instructions.md"
+          file: ".github/prompts/homework-assignment.prompt.md"
 
-      - name: Check for applyTo property in instruction file
-        id: check_apply_to
+      - name: Check for assignment creation
+        id: check_assignment
         continue-on-error: true
-        uses: skills/action-keyphrase-checker@v1
+        uses: skills/exercise-toolkit/actions/file-exists@v0.7.0
         with:
-          text-file: ".github/instructions/python-homework.instructions.md"
-          keyphrase: "applyTo"
+          file: "assignments"
       # END: Check practical exercise
 
       - name: Update comment - step results
@@ -84,16 +82,12 @@ jobs:
           edit-mode: replace
           file: exercise-toolkit/markdown-templates/step-feedback/step-results-table.md
           vars: |
-            step_number: 2
+            step_number: 3
             results_table:
-              - description: "Checked if .github/instructions/python-homework.instructions.md file exists"
-                passed: ${{ steps.check_instruction_file.outcome == 'success' }}
-              - description: "Checked for applyTo property in instruction file"
-                passed: ${{ steps.check_apply_to.outcome == 'success' }}
-
-      - name: Fail job if not all checks passed
-        if: contains(steps.*.outcome, 'failure')
-        run: exit 1
+              - description: "Checked if .github/prompts/homework-assignment.prompt.md file exists"
+                passed: ${{ steps.check_prompt_file.outcome == 'success' }}
+              - description: "Checked if assignment was created using the prompt"
+                passed: ${{ steps.check_assignment.outcome == 'success' }}
 
   post_next_step_content:
     name: Post next step content
@@ -121,14 +115,14 @@ jobs:
           issue-number: ${{ env.ISSUE_NUMBER }}
           file: exercise-toolkit/markdown-templates/step-feedback/step-finished-prepare-next-step.md
           vars: |
-            next_step_number: 3
-
+            next_step_number: 4
+          
       - name: Create comment - add step content
         uses: GrantBirki/comment@v2.1.1
         with:
           repository: ${{ env.ISSUE_REPOSITORY }}
           issue-number: ${{ env.ISSUE_NUMBER }}
-          file: ${{ env.STEP_3_FILE }}
+          file: ${{ env.STEP_4_FILE }}
 
       - name: Create comment - watching for progress
         uses: GrantBirki/comment@v2.1.1
@@ -140,6 +134,6 @@ jobs:
       - name: Disable current workflow and enable next one
         run: |
           gh workflow disable "${{github.workflow}}"
-          gh workflow enable "Step 3"
+          gh workflow enable "Step 4"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

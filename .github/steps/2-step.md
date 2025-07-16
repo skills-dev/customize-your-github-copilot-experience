@@ -1,27 +1,43 @@
-## Step 2: (replace-me: STEP-NAME)
+## Step 2: Creating Custom Instructions
 
-(replace-me: OPTIONAL Brief story or scenario to introduce the step)
+Now that you have repository-wide instructions set up, you want different types of files to follow specific patterns and conventions based on their purpose and location in your project.
 
-### 📖 Theory: (replace-me: Theory title)
+### 📖 Theory: Directory-Specific Custom Instructions
 
-<!-- GitHub-styled notifications can be used outside of ordered lists. Available options are: NOTE, IMPORTANT, WARNING, TIP, CAUTION -->
-<!--
-> [!NOTE]
-> (Important note or additional information relevant to this section)
- -->
+Custom instructions allow you to provide specific guidance to Copilot for different file types or directories. By creating instruction files in `.github/instructions/`, you can define rules that apply to different parts of your project. This enables more granular control over how Copilot behaves.
 
-(replace-me: Optional theory or background information relevant to this step)
+Each instruction file can target specific patterns using the `applyTo` property in the frontmatter. For example, you might have different instructions for Python files versus JavaScript files, or different rules for test files versus production code.
 
-### ⌨️ Activity: (replace-me: Activity title)
+> [!IMPORTANT]
+> Directory-specific instructions take precedence over repository-wide instructions, allowing you to create specialized behavior for different parts of your codebase.
 
-1. (replace-me: First instruction)
-1. (replace-me: Second instruction)
-1. (replace-me: Additional instructions as needed)
+**Learn more:**
+
+- [Custom instructions in VS Code](https://code.visualstudio.com/docs/copilot/copilot-customization#_custom-instructions)
+- [Awesome Copilot Examples](https://github.com/github/awesome-copilot)
+
+### ⌨️ Activity: Create Directory-Specific Instructions
+
+1. Create a new directory `.github/instructions/` if it doesn't already exist
+1. Create a file named `python-homework.instructions.md` in the instructions directory
+1. Add frontmatter to specify which files this applies to (e.g., Python files in homework directories)
+1. Include specific guidelines for generating educational Python code
+1. Test your instructions by asking Copilot to help with a Python file
+
+> [!TIP]
+> Use the `applyTo` property in your frontmatter to target specific file patterns like `homework/**/*.py` for Python homework files.
 
 <details>
-<summary>Having trouble? 🤷</summary><br/>
+<summary>Need help with instruction file format? 🤷</summary>
 
-- (replace-me: Troubleshooting tip or hint)
-- (replace-me: Additional troubleshooting tips as needed)
+Your instruction file should start with frontmatter like:
+
+```yaml
+---
+applyTo: "homework/**/*.py"
+---
+```
+
+Then include specific guidelines for how code should be generated for those files.
 
 </details>
