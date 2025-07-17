@@ -1,0 +1,30 @@
+{
+  "course": {
+    "title": "Computer Science",
+    "school": "Mergington High School",
+    "teacher": "Mr. Johnson",
+    "description": "Introduction to programming and computer science concepts"
+  },
+  "assignments": [
+    {
+      "id": "python-basics",
+      "title": "Python Basics",
+      "description": "Variables, data types, conditionals, and loops",
+      "path": "../assignments/python-basics",
+      "dueDate": "2025-08-15",
+      "status": "active",
+      "attachments": [
+        {
+          "name": "Starter Code",
+          "file": "starter-code.py",
+          "type": "python"
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "enableDownloads": true,
+    "showDueDates": true,
+    "allowLateSubmissions": false
+  }
+}
