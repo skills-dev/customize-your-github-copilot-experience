@@ -1,0 +1,17 @@
+{
+  "name": "Python 3",
+  "image": "mcr.microsoft.com/vscode/devcontainers/python:3.13",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "GitHub.copilot",
+        "ms-python.python",
+        "ms-python.debugpy",
+        "ms-vscode.live-server"
+      ],
+      "settings": {
+        "livePreview.openPreviewTarget": "External Browser"
+      }
+    }
+  }
+}

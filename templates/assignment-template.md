@@ -4,8 +4,6 @@
 
 [Brief description of what the student will build or accomplish in this assignment]
 
----
-
 ## 📝 Tasks
 
 ### 🛠️	[Task 1 Title]

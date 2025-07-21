@@ -20,6 +20,21 @@
           "type": "python"
         }
       ]
+    },
+        {
+      "id": "games-in-python",
+      "title": "Games in Python",
+      "description": "Creating games using Python",
+      "path": "../assignments/games-in-python",
+      "dueDate": "2025-08-15",
+      "status": "active",
+      "attachments": [
+        {
+          "name": "Starter Code",
+          "file": "starter-code.py",
+          "type": "python"
+        }
+      ]
     }
   ],
   "settings": {
