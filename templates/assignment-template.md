@@ -1,37 +1,35 @@
-# [Assignment Title] Assignment
+# 📘 Assignment: [Assignment Title]
 
-## Learning Objectives
+## 🎯 Objective
 
-By completing this assignment, you will:
+[Brief description of what the student will build or accomplish in this assignment]
 
-- [Learning objective 1]
-- [Learning objective 2]
-- [Learning objective 3]
+---
 
-## Assignment Overview
+## 📝 Tasks
 
-[Brief description of what the student will build or accomplish]
+### 🛠️	[Task 1 Title]
 
-## Instructions
+**Description**
+[Description what needs to be done by the student for this task]
 
-1. [Step 1]
-2. [Step 2]
-3. [Step 3]
-
-## Requirements
-
-Your completed program should:
+**Requirements**
+Completed program should:
 
 - [Requirement 1]
 - [Requirement 2]
 - [Requirement 3]
 
-## Grading Criteria
 
-- **Criteria 1**: Points
-- **Criteria 2**: Points
-- **Criteria 3**: Points
+### 🛠️	[Task 2 Title]
 
-## Submission
+**Description**
+[Description what needs to be done by the student for this task]
 
-[Instructions for how students should submit their work]
+**Requirements**
+Completed program should:
+
+- [Requirement 1]
+- [Requirement 2]
+- [Requirement 3]
+

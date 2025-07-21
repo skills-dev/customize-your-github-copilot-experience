@@ -1,44 +1,58 @@
 # Python Basics Assignment
 
-## Learning Objectives
+Welcome to your first Python assignment! This exercise will help you practice some of the most fundamental skills in Python programming. Complete each task below by writing Python code in the provided `starter-code.py` file.
 
-By completing this assignment, you will:
+## Task 1: User Input and String Formatting
 
-- Understand variable assignment and naming conventions
-- Work with basic data types (int, float, str, bool)
-- Implement conditional statements (if/elif/else)
-- Use loops for repetitive tasks (for and while loops)
-- Practice writing clean, readable Python code
+Write a function called `welcome_message()` that:
 
-## Assignment Overview
+- Asks the user for their name, age, and favorite color using `input()`.
+- Returns a welcome message formatted like this:
 
-You are tasked with completing a grade calculator program for Mergington High School. The program should calculate student grades, determine letter grades, and provide summary statistics.
+  `Hello, [name]! You are [age] years old and your favorite color is [color].`
 
-## Instructions
+**Example:**
 
-1. Open the `starter-code.py` file
-2. Complete all sections marked with `# TODO:`
-3. Test your code to ensure it works correctly
-4. Make sure your code follows Python naming conventions
+```
+Hello, Alice! You are 25 years old and your favorite color is blue.
+```
 
-## Requirements
+---
 
-Your completed program should:
+## Task 2: Basic Arithmetic
 
-- Store student information in appropriate variables
-- Calculate percentage grades from points earned
-- Convert percentages to letter grades using the school's grading scale
-- Process multiple assignment scores
-- Display results in a clear, formatted way
+Write a function called `add_two_numbers()` that:
 
-## Grading Scale
+- Asks the user to enter two numbers.
+- Adds them together and prints the result
 
-- A: 90-100%
-- B: 80-89%
-- C: 70-79%
-- D: 60-69%
-- F: Below 60%
+**Example:**
+
+```
+Enter the first number: 3
+Enter the second number: 7
+10
+```
+
+---
+
+## Task 3: Conditional Statements
+
+Write a function called `is_even()` that:
+
+- Takes a single integer argument.
+- Returns `True` if the number is even, and `False` if it is odd.
+
+**Example:**
+
+```python
+print(is_even(4))  # True
+print(is_even(5))  # False
+```
+
+---
 
 ## Submission
 
-Submit your completed `starter-code.py` file with all TODO sections filled in and working correctly.
+- Make sure your code runs without errors.
+- Save your work in `starter-code.py`.
