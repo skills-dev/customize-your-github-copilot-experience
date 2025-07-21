@@ -7,7 +7,7 @@ Build a simple version of the classic game "Hangman" using Python to practice wo
 
 ## 📝 Tasks
 
-### 🛠️ Hangman Game
+### 🛠️ Implement Hangman Game
 
 **Description**
 Write a Python program that implements the Hangman game.
