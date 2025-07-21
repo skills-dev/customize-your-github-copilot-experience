@@ -5,12 +5,12 @@ This project provides a simple way to organize student homework assignments in f
 
 ##  Assignments
 
-All assignments are structured in a consistent way to ensure clarity and no confusion. All assignments are stored in the `assignments/` folder, each in its own subfolder.
+All assignments are structured in a consistent way to ensure clarity and no confusion. All assignments are stored in the [`assignments/`](../assignments/) folder, each in its own subfolder.
 
 ## Website
 
 The website serves as a static portal for browsing and viewing assignments. 
 
-The `config.json` file contains metadata for each assignment, which is used to generate the assignment list and details dynamically. 
+The [`config.json`](../website/config.json) file contains metadata for each assignment, which is used to generate the assignment list and details dynamically. 
 
 The website does not require a build step; changes are reflected immediately.

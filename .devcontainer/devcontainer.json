@@ -10,7 +10,19 @@
         "ms-vscode.live-server"
       ],
       "settings": {
-        "livePreview.openPreviewTarget": "External Browser"
+        "livePreview.openPreviewTarget": "External Browser",
+        
+        // These are defaults but keeping them here for clarity and explicitness
+        "github.copilot.chat.codeGeneration.useInstructionFiles": true,
+        "chat.promptFilesLocations": {
+          ".github/prompts": true
+        },
+        "chat.instructionsFilesLocations": {
+          ".github/instructions": true
+        },
+        "chat.modeFilesLocations": {
+          ".github/chatmodes": true
+        }
       }
     }
   }
