@@ -24,3 +24,4 @@ All assignment markdown files should follow these guidelines:
   - In Requirements, use bullet points to list the expected outcomes or features. Be specific and measurable 
   - Provide example input/output in code blocks if helpful.
 
+Do not include extra sections unless explicitly specified.

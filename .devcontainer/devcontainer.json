@@ -7,7 +7,8 @@
         "GitHub.copilot",
         "ms-python.python",
         "ms-python.debugpy",
-        "ms-vscode.live-server"
+        "ms-vscode.live-server",
+        "mechatroner.rainbow-csv"
       ],
       "settings": {
         "livePreview.openPreviewTarget": "External Browser",
