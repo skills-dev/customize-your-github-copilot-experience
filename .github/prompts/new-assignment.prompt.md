@@ -11,5 +11,5 @@ Follow these steps to create a new assignment:
 1. Create a new file in the directory named `README.md` with the structure from the [assignment-template.md](../../templates/assignment-template.md) file
 1. Fill Out the Assignment Details
 1. (optional) Add starter code or attachments. 
-    If the assignment needs starter code or files, add them to the same assignment folder.
+    If the assignment needs starter code or files, add them to the same assignment folder. This is not required for all assignments.
 1. Update the assignments list in [config.json](../../website/config.json) website configuration file to include the new assignment. For the dueDate field, use the current date plus 7 days unless specified otherwise.
