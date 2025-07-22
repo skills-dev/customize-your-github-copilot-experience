@@ -9,12 +9,13 @@ Build a simple version of the classic game "Hangman" using Python to practice wo
 
 ### 🛠️ Implement Hangman Game
 
-**Description**
+#### Description
+
 Write a Python program that implements the Hangman game.
 
-**Requirements**
-Completed program should:
+#### Requirements
 
+Completed program should:
 - Randomly select a word from a list of possible words.
 - Allow the player to guess one letter at a time.
 - Show the current progress of the word (with unguessed letters as underscores) after each guess.

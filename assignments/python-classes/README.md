@@ -8,10 +8,10 @@ Learn how to define and use classes in Python to model real-world objects and be
 
 ### 🛠️ Define a Simple Class
 
-**Description**
+#### Description
 Create a class named `Car` that represents a car with attributes for make, model, and year. Add a method to display information about the car.
 
-**Requirements**
+#### Requirements
 Completed program should:
 
 - Define a class `Car` with `make`, `model`, and `year` attributes
@@ -21,10 +21,10 @@ Completed program should:
 
 ### 🛠️ Add Methods and Interactions
 
-**Description**
+#### Description
 Expand the `Car` class to include a method to update the car's mileage and another to display the current mileage.
 
-**Requirements**
+#### Requirements
 Completed program should:
 
 - Add a `mileage` attribute to the `Car` class (default 0)

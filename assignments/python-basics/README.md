@@ -9,10 +9,10 @@ Practice fundamental Python programming skills including user input, string form
 
 ### 🛠️ User Input and String Formatting
 
-**Description**
+#### Description
 Write a function called `welcome_message()` that interacts with the user and returns a formatted welcome message.
 
-**Requirements**
+#### Requirements
 Completed program should:
 
 - Ask the user for their name, age, and favorite color using `input()`.
@@ -23,10 +23,10 @@ Completed program should:
 
 ### 🛠️ Basic Arithmetic
 
-**Description**
+#### Description
 Write a function called `add_two_numbers()` that prompts the user for two numbers and prints their sum.
 
-**Requirements**
+#### Requirements
 Completed program should:
 
 - Ask the user to enter two numbers.
@@ -38,10 +38,10 @@ Completed program should:
 
 ### 🛠️ Conditional Statements
 
-**Description**
+#### Description
 Write a function called `is_even()` that checks if a number is even.
 
-**Requirements**
+#### Requirements
 Completed program should:
 
 - Take a single integer argument.
