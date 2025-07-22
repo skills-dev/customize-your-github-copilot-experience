@@ -41,6 +41,25 @@
         }
       ]
     }
+    ,{
+      "id": "data-analysis",
+      "title": "Data Analysis",
+      "description": "Basics of data analysis: loading, exploring, and visualizing data in Python.",
+      "path": "../assignments/data-analysis",
+      "dueDate": "2025-07-29",
+      "attachments": [
+        {
+          "name": "Starter Code",
+          "file": "starter-code.py",
+          "type": "python"
+        },
+        {
+          "name": "Sample Dataset",
+          "file": "data.csv",
+          "type": "csv"
+        }
+      ]
+    }
   ],
   "settings": {
     "enableDownloads": true,
