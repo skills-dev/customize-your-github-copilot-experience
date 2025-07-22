@@ -12,4 +12,4 @@ Follow these steps to create a new assignment:
 1. Fill Out the Assignment Details
 1. (optional) Add starter code or attachments. 
     If the assignment needs starter code or files, add them to the same assignment folder.
-1. Update the assignments list in [config.json](../../website/config.json) website configuration file to include the new assignment.
+1. Update the assignments list in [config.json](../../website/config.json) website configuration file to include the new assignment. For the dueDate field, use the current date plus 7 days unless specified otherwise.

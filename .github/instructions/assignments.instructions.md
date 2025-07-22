@@ -10,6 +10,7 @@ All assignment markdown files should follow these guidelines:
 ## 1. Template Usage
 
 - Assignment markdown files must follow the structure in `templates/assignment-template.md`.
+- The assignment must be created as a `README.md` file
 - Do not remove or skip required sections from the template.
 
 
@@ -22,5 +23,4 @@ All assignment markdown files should follow these guidelines:
   - In the Description, clearly state what the student must do. 
   - In Requirements, use bullet points to list the expected outcomes or features. Be specific and measurable 
   - Provide example input/output in code blocks if helpful.
-
 
