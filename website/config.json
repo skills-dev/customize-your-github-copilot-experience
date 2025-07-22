@@ -3,7 +3,7 @@
     "title": "Computer Science",
     "school": "Mergington High School",
     "teacher": "Mr. Johnson",
-    "description": "Introduction to programming and computer science concepts"
+    "description": "Introduction to programming and computer science"
   },
   "assignments": [
     {
@@ -12,7 +12,6 @@
       "description": "Variables, data types, conditionals, and loops",
       "path": "../assignments/python-basics",
       "dueDate": "2025-07-15",
-      "status": "active",
       "attachments": [
         {
           "name": "Starter Code",
@@ -26,8 +25,7 @@
       "title": "Games in Python",
       "description": "Creating games using Python",
       "path": "../assignments/games-in-python",
-      "dueDate": "2025-07-25",
-      "status": "active"
+      "dueDate": "2025-09-01"
       
     }
    ,{
@@ -36,7 +34,6 @@
       "description": "Defining and using classes in Python",
       "path": "../assignments/python-classes",
       "dueDate": "2025-08-05",
-      "status": "active",
       "attachments": [
         {
           "name": "Starter Code",

@@ -26,6 +26,19 @@ class AssignmentPortal {
     this.config = await response.json();
   }
 
+  isActive(dueDate) {
+    if (!dueDate) return true; // No due date means always active
+    
+    const currentDate = new Date();
+    const assignmentDueDate = new Date(dueDate);
+    
+    // Set both dates to start of day for accurate comparison
+    currentDate.setHours(0, 0, 0, 0);
+    assignmentDueDate.setHours(0, 0, 0, 0);
+    
+    return assignmentDueDate >= currentDate;
+  }
+
   renderCourseInfo() {
     const { course } = this.config;
     document.getElementById("course-title").textContent = course.title;
@@ -35,16 +48,7 @@ class AssignmentPortal {
   }
 
   getAssignmentStatus(assignment) {
-    if (!assignment.dueDate) return 'active';
-    
-    const currentDate = new Date();
-    const dueDate = new Date(assignment.dueDate);
-    
-    // Set both dates to start of day for accurate comparison
-    currentDate.setHours(0, 0, 0, 0);
-    dueDate.setHours(0, 0, 0, 0);
-    
-    return dueDate >= currentDate ? 'active' : 'overdue';
+    return this.isActive(assignment.dueDate) ? 'active' : 'overdue';
   }
 
   renderNextDueAssignment() {
@@ -52,7 +56,7 @@ class AssignmentPortal {
     const nextDueContainer = document.getElementById("next-due-assignment");
     
     // Find the next assignment due (active assignments only)
-    const activeAssignments = assignments.filter(a => this.getAssignmentStatus(a) === 'active' && a.dueDate);
+    const activeAssignments = assignments.filter(a => this.isActive(a.dueDate) && a.dueDate);
     if (activeAssignments.length === 0) {
       nextDueContainer.innerHTML = '<div class="loading">No upcoming assignments</div>';
       return;
@@ -136,7 +140,20 @@ class AssignmentPortal {
       return;
     }
 
-    const assignmentRows = assignments
+    // Sort assignments by due date: latest due date first
+    const sortedAssignments = [...assignments].sort((a, b) => {
+      // If one has no due date, put it at the end
+      if (!a.dueDate && !b.dueDate) return 0;
+      if (!a.dueDate) return 1;
+      if (!b.dueDate) return -1;
+
+      const dateA = new Date(a.dueDate);
+      const dateB = new Date(b.dueDate);
+      
+      return dateB - dateA;
+    });
+
+    const assignmentRows = sortedAssignments
       .map((assignment) => this.createAssignmentRow(assignment))
       .join("");
 
