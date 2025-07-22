@@ -26,17 +26,17 @@ class AssignmentPortal {
     this.config = await response.json();
   }
 
-  isActive(dueDate) {
-    if (!dueDate) return true; // No due date means always active
+  getAssignmentStatus(assignment) {
+    if (!assignment.dueDate) return 'active'; // No due date means always active
     
     const currentDate = new Date();
-    const assignmentDueDate = new Date(dueDate);
+    const assignmentDueDate = new Date(assignment.dueDate);
     
     // Set both dates to start of day for accurate comparison
     currentDate.setHours(0, 0, 0, 0);
     assignmentDueDate.setHours(0, 0, 0, 0);
     
-    return assignmentDueDate >= currentDate;
+    return assignmentDueDate >= currentDate ? 'active' : 'overdue';
   }
 
   renderCourseInfo() {
@@ -47,16 +47,12 @@ class AssignmentPortal {
     document.title = `${course.school} - ${course.title}`;
   }
 
-  getAssignmentStatus(assignment) {
-    return this.isActive(assignment.dueDate) ? 'active' : 'overdue';
-  }
-
   renderNextDueAssignment() {
     const { assignments } = this.config;
     const nextDueContainer = document.getElementById("next-due-assignment");
     
     // Find the next assignment due (active assignments only)
-    const activeAssignments = assignments.filter(a => this.isActive(a.dueDate) && a.dueDate);
+    const activeAssignments = assignments.filter(a => this.getAssignmentStatus(a) === 'active' && a.dueDate);
     if (activeAssignments.length === 0) {
       nextDueContainer.innerHTML = '<div class="loading">No upcoming assignments</div>';
       return;

@@ -257,45 +257,7 @@ body {
   align-items: center;
 }
 
-.assignments-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
 
-.assignment-card {
-  background: white;
-  border-radius: 8px;
-  padding: 2rem;
-  box-shadow: var(--shadow);
-  border: 1px solid var(--border-color);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.assignment-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-}
-
-.assignment-card h3 {
-  color: var(--primary-color);
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-}
-
-.assignment-card p {
-  margin-bottom: 1.5rem;
-  color: #666;
-}
-
-.assignment-meta {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1.5rem;
-  font-size: 0.9rem;
-}
 
 .due-date {
   color: var(--accent-color);
@@ -317,11 +279,6 @@ body {
 .status.overdue {
   background-color: #f8d7da;
   color: #721c24;
-}
-
-.status.draft {
-  background-color: #fff3cd;
-  color: #856404;
 }
 
 /* Buttons */
@@ -494,10 +451,6 @@ body {
     gap: 1rem;
   }
 
-  .assignments-grid {
-    grid-template-columns: 1fr;
-  }
-  
   .assignment-row {
     flex-direction: column;
     align-items: flex-start;
@@ -517,11 +470,5 @@ body {
 
   .assignment-actions {
     flex-direction: column;
-  }
-
-  .assignment-meta {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
   }
 }

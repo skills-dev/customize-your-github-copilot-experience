@@ -19,16 +19,15 @@
           "type": "python"
         }
       ]
-    }
-   ,{
+    },
+    {
       "id": "games-in-python",
       "title": "Games in Python",
       "description": "Creating games using Python",
       "path": "../assignments/games-in-python",
       "dueDate": "2025-09-01"
-      
-    }
-   ,{
+    },
+    {
       "id": "python-classes",
       "title": "Python Classes",
       "description": "Defining and using classes in Python",
