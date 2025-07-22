@@ -9,21 +9,33 @@
   <body>
     <header class="header">
       <div class="container">
-        <h1 id="course-title">Computer Science</h1>
-        <p id="course-info">Loading course information...</p>
+        <div class="header-content">
+          <div class="header-text">
+            <h1 id="course-title">Computer Science</h1>
+            <p id="course-info">Loading course information...</p>
+            <p id="course-description" class="course-desc">Access your assignments and course materials below.</p>
+          </div>
+          <div class="header-mascot">
+            <img src="images/codercat.jpg" alt="Codercat" class="octocat-mascot" />
+          </div>
+        </div>
       </div>
     </header>
 
     <main class="main">
       <div class="container">
-        <section class="welcome">
-          <h2>Welcome Students!</h2>
-          <p id="course-description">Access your assignments and course materials below.</p>
+        <!-- Next Due Assignment Section -->
+        <section class="next-due-section">
+          <h2><span class="highlight-text">📅</span> Assignment Due Soon</h2>
+          <div id="next-due-assignment" class="next-due-card">
+            <div class="loading">Loading next assignment...</div>
+          </div>
         </section>
 
+        <!-- All Assignments Section -->
         <section class="assignments">
-          <h2>Current Assignments</h2>
-          <div id="assignments-list" class="assignments-grid">
+          <h2>All Assignments</h2>
+          <div id="assignments-list" class="assignments-list">
             <!-- Assignments will be loaded dynamically -->
             <div class="loading">Loading assignments...</div>
           </div>
@@ -33,7 +45,12 @@
 
     <footer class="footer">
       <div class="container">
-        <p>&copy; 2025 Mergington High School</p>
+        <div class="footer-content">
+          <p>&copy; 2025 Mergington High School</p>
+          <div class="footer-octocat">
+            <img src="images/codercat.jpg" alt="Footer Codercat" class="footer-mascot" />
+          </div>
+        </div>
       </div>
     </footer>
 
