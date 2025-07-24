@@ -46,15 +46,53 @@ To work with custom instructions, let's first set up our development environment
 
 ### ⌨️ Activity: Create Repository Copilot Instructions
 
-1. Create a new file called `.github/copilot-instructions.md`
-1. Add general guidelines and coding standards to the instructions file that describe this project
-1. Test the instructions by asking Copilot Chat about a file and observe how it uses your instructions
+Now that you've explored the project, let's create custom instructions to help Copilot understand Mr. Johnson's educational website project.
+
+1. In VS Code, create a new file called `.github/copilot-instructions.md`
+
+1. Add the following content to describe this educational project:
+
+   ```markdown
+    # Project Description
+
+    This project is Mr. Johnson's educational website for sharing homework assignments and coding exercises with students. Students can browse, view, and download assignments directly from the portal.
+
+
+    ## Project Structure
+
+    - [`assignments/`](../assignments/) Each homework assignment is stored in its own subfolder with a consistent structure.
+    - [`templates/`](../templates/) Reusable templates for new content
+    - [`website/`](../website/) The website serves as a static portal for browsing and viewing assignments. Only HTML, CSS, and JavaScript files are used here. Content is configurable via [`config.json`](../website/config.json) file to dynamically generate assignment lists and details.
+
+    ## Project Guidelines
+
+    - Maintain consistent styling across all pages
+    - Keep file and folder names descriptive and organized
+
+    ## Educational Standards
+
+    When generating content for this project:
+
+    - **Learning-focused**: All content should be designed with clear learning objectives and appropriate difficulty levels
+    - **Student-friendly**: Use clear, encouraging language that motivates students
+   ```
+
+1. Save the file and open Copilot Chat in `Ask` mode.
+
+1. Test your instructions by asking Copilot about the project:
+
+   > Ask Copilot: "What can you tell me about this project?"
+
+1. Observe how Copilot references your custom instructions in its response - you should see the `.github/copilot-instructions.md` file listed in the references section.
+
+1. Commit and push the `.github/copilot-instructions.md` file to the `main` branch
+
+1. Wait for Mona to prepare the next step!
 
 <details>
 <summary>Having trouble? 🤷</summary><br/>
 
 - The `.github/copilot-instructions.md` file should be at the root of the `.github` folder
-- Include information about the project structure, educational standards, and any coding conventions
-- You can reference the existing content structure to understand what guidelines would be helpful
+- Make sure you commited and pushed the changes.
 
 </details>
