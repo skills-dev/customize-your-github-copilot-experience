@@ -3,12 +3,11 @@
 Now that you've established instructions for assignments, you want to streamline creating new assignments.
 
 Creating assignments is a repetetive task and involves multiple steps.
+
 - Creating the assignment
 - Updating the website configuration to load the new assignment
 
 It's a perfect scenario to have a reusable prompt just for this!
-
-
 
 ### 📖 Theory: Prompt Files
 
@@ -27,27 +26,70 @@ You can reference other workspace files, prompt files, or instructions files by 
 
 Visual Studio Code by default will look for `*.prompt.md` files in `.github/prompts/` directory but that is configurable with [VS Code Settings](vscode://settings/chat.promptFilesLocations).
 
+### ⌨️ Activity: Create Assignment Prompt
 
-### ⌨️ Activity: Create Homework Assignment Prompt
+Now let's create a reusable prompt that automates the entire assignment creation process.
 
 1. Create a new file called `.github/prompts/new-assignment.prompt.md`
-1. Add frontmatter with `mode: agent` to make it an agentic prompt
-1. Build a prompt that guides Copilot through creating new homework assignments step by step
 
-### ⌨️ Activity: Generate an Assignment Using the Prompt
+1. Add the following content to create a comprehensive assignment generation prompt:
 
-1. Open Copilot Chat in VS Code
-1. Look for your prompt in the prompt suggestions (it should appear as "new-assignment")
-1. Use the prompt to generate a new assignment on a topic of your choice
-1. Observe how the prompt leverages your existing instructions and follows the established patterns
+   ```markdown
+   ---
+   mode: agent
+   description: Create a new programming homework assignment
+   ---
+
+   # Create New Programming Assignment
+
+   Your goal is to generate a new homework assignment for the Mergington High School students.
+
+   ## Step 1: Gather Assignment Information
+
+   If not already provided by the user, ask what the assignment will be about.
+
+   ## Step 2: Create Assignment Structure
+
+   1. Create a new directory in the `assignments` folder with a unique name based on the assignment topic
+   1. Create a new file in the directory named `README.md` with the structure from the [assignment-template.md](../../templates/assignment-template.md) file
+   1. Fill out the assignment details in the README file
+   1. (Optional) Add starter code or attachments if the assignment needs them - add these files to the same assignment folder
+
+   ## Step 3: Update Website Configuration
+
+   Update the assignments list in [config.json](../../website/config.json) website configuration file to include the new assignment. For the dueDate field, use the current date plus 7 days unless specified otherwise.
+   ```
+
+1. Save the file.
+
+### ⌨️ Activity: Test the Assignment Prompt
+
+1. Open Copilot Chat in VS Code and ensure you're in Agent mode.
+
+1. Run your prompt by typing `/new-assignment` in the chat input.
+
+1. Follow the prompts and create a test assignment on a topic like "Basic Python Functions" or "JavaScript Arrays".
+
+1. Verify the prompt works correctly by checking:
+
+   - A new directory was created in `assignments/`
+   - The `README.md` file follows your assignment template structure
+   - The assignment references your instruction files (look for them in Copilot's response references)
+   - The `website/config.json` file was updated with the new assignment
+
+1. Review the generated assignment content to ensure it matches your established conventions.
+
+1. Commit and push your changes:
+
+   - The new prompt file: `.github/prompts/new-assignment.prompt.md`
+   - The generated assignment directory and files
+   - Updated `website/config.json` configuration
+
+1. Wait for Mona to prepare the next step!
 
 <details>
 <summary>Having trouble? 🤷</summary><br/>
 
-- Prompt files should be in the `.github/prompts/` directory
-- Use `---` frontmatter at the top with `mode: agent` for agentic prompts
-- The prompt should reference your templates and instruction files
-- Include steps for creating the directory, README.md file, and updating the website configuration
-- Test the prompt by running it through Copilot Chat
+- Make sure the prompt file is in `.github/prompts/` directory with the `.prompt.md` extension
 
 </details>
