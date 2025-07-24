@@ -4,7 +4,7 @@ After setting up general project standards, you realize that your assignment fil
 
 You want to make sure all your assignments follow the same pattern and structure so students have a consistent experience, but these rules should only apply when working on assignment files.
 
-### 📖 Theory: File-Specific Custom Instructions
+### 📖 Theory: Custom Instruction Files
 
 `.instructions.md` files are custom instruction files that provide targeted guidance for specific files or directories in your project.
 
