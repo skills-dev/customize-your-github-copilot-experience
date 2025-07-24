@@ -22,12 +22,27 @@ The complete set of instructions will be automatically added to all requests tha
 >
 > See [GitHub Docs: Add repository instructions](https://docs.github.com/en/copilot/how-tos/custom-instructions/adding-repository-custom-instructions-for-github-copilot) for more information.
 
+### ⌨️ Activity: Explore the Educational Website Project
 
-### ⌨️ Activity: Setup Development Environment
+To work with custom instructions, let's first set up our development environment and explore the project structure.
 
-1. Start the codespace
-1. Explore the website structure by looking at the `website/` folder
-1. Browse the existing assignments in the `assignments/` folder to understand the current structure
+1. Right-click the below button to open the **Create Codespace** page in a new tab. Use the default configuration.
+
+   [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/{{full_repo_name}}?quickstart=1)
+
+1. Confirm the **Repository** field is your copy of the exercise, not the original, then click the green **Create Codespace** button.
+
+   - ✅ Your copy: `/{{full_repo_name}}`
+   - ❌ Original: `/skills/customize-your-github-copilot-experience`
+
+1. Wait a moment for Visual Studio Code to load in your browser.
+
+1. Explore the project structure:
+
+   - Browse the `website/` folder to see the static website structure
+   - Look at the `assignments/` folder to understand the existing assignment formats
+
+1. Right-click on `website/index.html` and select **Show Preview** to see the website in action. Keep this preview tab open as we'll be making edits to the website throughout the exercise and you can see the updates live.
 
 ### ⌨️ Activity: Create Repository Copilot Instructions
 
@@ -43,4 +58,3 @@ The complete set of instructions will be automatically added to all requests tha
 - You can reference the existing content structure to understand what guidelines would be helpful
 
 </details>
-
