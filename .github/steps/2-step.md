@@ -25,7 +25,7 @@ Now let's create targeted instructions specifically for assignment files to ensu
 
 1. Create a new file called `.github/instructions/assignments.instructions.md`
 
-1. Add the following content to define assignment formatting standards:
+1. Add the following content to define assignment formatting standards.:
 
    ```markdown
    ---
@@ -55,7 +55,7 @@ Now let's create targeted instructions specifically for assignment files to ensu
    Do not include extra sections unless explicitly specified.
    ```
 
-1. Save the file.
+1. These instructions will be automatically applied with every chat request to Markdown (`.md`) files in `assignments` directory. Let's test it!
 
 ### ⌨️ Activity: Test the Assignment Instructions
 
