@@ -59,9 +59,9 @@ Now let's create targeted instructions specifically for assignment files to ensu
 
 ### ⌨️ Activity: Test the Assignment Instructions
 
-1. Open the file `assignments/games-in-python/README.md` in VS Code to see an example assignment.
+1. Open the file `assignments/games-in-python/README.md` in VS Code. This assignment doesn't match all the conventions you've setup as a teacher.
 
-1. With the assignment file open, ask Copilot Chat in `Agent` mode to update the assignment:
+1. With the assignment file open, ask Copilot Chat in `Agent` mode to update the assignment structure:
 
    ```text
    Update this assignment file to follow the project standards and template structure
