@@ -1,17 +1,23 @@
 ## Step 2: Creating Custom Instructions
 
-You want to make sure all your assignments follow the same pattern and structure so students have a consistent experience.
+After setting up general project standards, you realize that your assignment files need more specific formatting rules. While your repository-wide instructions work great for general coding standards, you don't want to clutter them with detailed assignment structure requirements that get included in every chat message.
+
+You want to make sure all your assignments follow the same pattern and structure so students have a consistent experience, but these rules should only apply when working on assignment files.
 
 ### 📖 Theory: File-Specific Custom Instructions
 
-Custom instructions allow you to provide specific guidance to Copilot for different file types or directories. By creating instruction files in `.github/instructions/`, you can define rules that explain "how a task should be done" and apply to different parts of your project. This enables more granular control over how Copilot behaves.
+`.instructions.md` files are custom instruction files that provide targeted guidance for specific files or directories in your project.
 
-Unlike repository-wide instructions, these targeted instructions use `applyTo` patterns to specify which files they affect, allowing you to have different standards for different parts of your codebase.
+Unlike repository-wide instructions that apply everywhere, `.instructions.md` files use `applyTo` patterns in the frontmatter to target specific files with glob syntax. This allows VS Code to automatically apply the instructions whenever Copilot works on files matching that pattern.
 
-Learn more about custom instructions:
+> You can also manually attach instructions using the **Add Context** button in Copilot Chat, however using `applyTo` patterns is much more convenient
 
-- [VS Code Copilot customization documentation](https://code.visualstudio.com/docs/copilot/copilot-customization#_custom-instructions)
-- [GitHub Awesome Copilot repository](https://github.com/github/awesome-copilot)
+> [!TIP] Instructions - focus on "HOW"
+> Instructions should focus on **how a task should be done** - describing the guidelines, standards, and conventions used in that particular part of the codebase
+>
+> Instructions are **NOT** meant to tell Copilot **what task should be done** - that's where your prompts come in!
+
+Visual Studio Code by default will look for `*.instructions.md` files in `.github/instructions/` directory but that is configurable with [VS Code Settings](vscode://settings/chat.instructionsFilesLocations).
 
 ### ⌨️ Activity: Create Assignment-Specific Instructions
 
@@ -64,6 +70,7 @@ Now let's create targeted instructions specifically for assignment files to ensu
 1. Observe how Copilot references your instruction files in its response - you should see the `.github/instructions/assignments.instructions.md` file listed in the references section.
 
 <!-- TODO: Add screenshot -->
+
 1. Apply the suggested changes that Copilot provides to update the assignment structure.
 
 1. Commit and push your changes of the instruction files and the updated assignment to the `main` branch.
