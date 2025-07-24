@@ -1,17 +1,27 @@
 ## Step 1: Setting Up Copilot Instructions
 
-You, Mr Johnson want to establish general high level standards for AI assistants to follow whenever working on your homework assignment project for the class of Mergington High School.
+You're Mr. Johnson, an IT teacher at Mergington High School who creates homework assignments and coding exercises for students. You maintain a static website to share these assignments and want to establish general standards for AI assistants to ensure consistent code quality and project structure.
+
+You've heard Copilot Instructions can help with that!
+
+<!-- TODO: Add website screenshot in a details section -->
 
 ### 📖 Theory: Repository Custom Instructions
 
-Repository custom instructions allow you to provide Copilot with context about your project standards. By creating a `.github/copilot-instructions.md` file, you can ensure that Copilot's suggestions consistently follow your teaching conventions and help generate assignments that meet your pedagogical goals.
+Repository custom instructions let you provide Copilot with repository-specific guidance and preferences that help it understand your project context and standards. By creating a `.github/copilot-instructions.md` file, you can ensure that Copilot's suggestions consistently follow your project conventions and coding standards.
 
-These instructions are automatically included in Copilot's context when working on files in your repository, helping maintain consistency across your entire project.
+The complete set of instructions will be automatically added to all requests that you submit to Copilot Chat in your repository.
 
-Learn more about custom instructions:
+> [!TIP] Writing Effective Instructions
+> Your instructions should be short, self-contained statements that provide Copilot with relevant information. Consider including:
+>
+> - An overview of the project's purpose and goals
+> - The folder structure and important directories
+> - Coding standards and conventions (naming, formatting, best practices)
+> - Specific tools, libraries, or frameworks used in the project
+>
+> See [GitHub Docs: Add repository instructions](https://docs.github.com/en/copilot/how-tos/custom-instructions/adding-repository-custom-instructions-for-github-copilot) for more information.
 
-- [Adding repository custom instructions for GitHub Copilot](https://docs.github.com/en/copilot/how-tos/custom-instructions/adding-repository-custom-instructions-for-github-copilot)
-- [GitHub Awesome Copilot repository](https://github.com/github/awesome-copilot)
 
 ### ⌨️ Activity: Setup Development Environment
 
@@ -33,3 +43,4 @@ Learn more about custom instructions:
 - You can reference the existing content structure to understand what guidelines would be helpful
 
 </details>
+
