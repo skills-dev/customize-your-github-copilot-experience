@@ -6,7 +6,7 @@ You want to make sure all your assignments follow the same pattern and structure
 
 ### 📖 Theory: Custom Instruction Files
 
-`.instructions.md` files are custom instruction files that provide targeted guidance for specific files or directories in your project.
+Instruction files (`.instructions.md`) provide targeted guidance for specific files or directories in your project.
 
 Unlike repository-wide instructions that apply everywhere, `.instructions.md` files use `applyTo` patterns in the frontmatter to target specific files with glob syntax. This allows VS Code to automatically apply the instructions whenever Copilot works on files matching that pattern.
 
@@ -16,6 +16,8 @@ Unlike repository-wide instructions that apply everywhere, `.instructions.md` fi
 > Instructions should focus on **how a task should be done** - describing the guidelines, standards, and conventions used in that particular part of the codebase
 >
 > Instructions are **NOT** meant to tell Copilot **what task should be done** - that's where your prompts come in!
+> 
+> See more in [VS Code Docs: Custom Instructions](https://code.visualstudio.com/docs/copilot/copilot-customization#_custom-instructions)
 
 Visual Studio Code by default will look for `*.instructions.md` files in `.github/instructions/` directory but that is configurable with [VS Code Settings](vscode://settings/chat.instructionsFilesLocations).
 

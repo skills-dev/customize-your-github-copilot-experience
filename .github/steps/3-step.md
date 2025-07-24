@@ -1,17 +1,32 @@
 ## Step 3: Building Reusable Prompts
 
-Creating homework assignments is something you do quite often, so you want to have a reusable prompt to make the process faster and more consistent.
+Now that you've established instructions for assignments, you want to streamline creating new assignments.
+
+Creating assignments is a repetetive task and involves multiple steps.
+- Creating the assignment
+- Updating the website configuration to load the new assignment
+
+It's a perfect scenario to have a reusable prompt just for this!
+
+
 
 ### 📖 Theory: Prompt Files
 
-Prompt files in VS Code allow you to save reusable prompts in Markdown files (`*.prompt.md`) that can be accessed in Copilot Chat. While instructions explain how tasks should be done, prompts describe "what should be done." Prompt files can take advantage of instruction files to reuse common guidelines and have task-specific instructions included in the prompt.
+Prompt files (`.prompt.md`) are reusable prompts most useful for common tasks in your project.
 
-These prompt files appear in Copilot Chat's prompt suggestions, making it easy to run complex, multi-step workflows with a single command.
+Prompt files can take advantage of instruction files to reuse common guidelines and have task-specific instructions included in the prompt.
 
-Learn more about prompt files:
+Prompt files can be selected with slash commands (`/`) in Copilot Chat, making complex workflows as simple as selecting from a menu.
 
-- [VS Code prompt files documentation](https://code.visualstudio.com/docs/copilot/copilot-customization#_prompt-files-experimental)
-- [GitHub Awesome Copilot repository](https://github.com/github/awesome-copilot)
+> [!TIP] Prompts - focus on "WHAT"
+> Prompt files describe the task to be performed (what should be done).
+>
+> Optionally, you can include task-specific guidelines about how the task should be performed, or you can reference custom instructions in the prompt file.
+>
+> See more in [VS Code Docs: Prompt Files](https://code.visualstudio.com/docs/copilot/copilot-customization#_prompt-files-experimental)
+
+Visual Studio Code by default will look for `*.prompt.md` files in `.github/prompts/` directory but that is configurable with [VS Code Settings](vscode://settings/chat.promptFilesLocations).
+
 
 ### ⌨️ Activity: Create Homework Assignment Prompt
 
