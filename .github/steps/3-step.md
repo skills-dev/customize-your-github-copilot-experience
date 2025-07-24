@@ -14,8 +14,6 @@ It's a perfect scenario to have a reusable prompt just for this!
 
 Prompt files (`.prompt.md`) are reusable prompts most useful for common tasks in your project.
 
-Prompt files can take advantage of instruction files to reuse common guidelines and have task-specific instructions included in the prompt.
-
 Prompt files can be selected with slash commands (`/`) in Copilot Chat, making complex workflows as simple as selecting from a menu.
 
 > [!TIP] Prompts - focus on "WHAT"
@@ -24,6 +22,8 @@ Prompt files can be selected with slash commands (`/`) in Copilot Chat, making c
 > Optionally, you can include task-specific guidelines about how the task should be performed, or you can reference custom instructions in the prompt file.
 >
 > See more in [VS Code Docs: Prompt Files](https://code.visualstudio.com/docs/copilot/copilot-customization#_prompt-files-experimental)
+
+You can reference other workspace files, prompt files, or instructions files by using Markdown links. Use relative paths to reference these files, and ensure that the paths are correct based on the location of the prompt file.
 
 Visual Studio Code by default will look for `*.prompt.md` files in `.github/prompts/` directory but that is configurable with [VS Code Settings](vscode://settings/chat.promptFilesLocations).
 
