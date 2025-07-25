@@ -7,11 +7,7 @@ _Learn how to customize GitHub Copilot to work better for your team and projects
 - **Who is this for**: Developers and educators who want to tailor Copilot's behavior to their specific workflows
 - **What you'll learn**: How to set up custom instructions, prompts, and chat modes to make Copilot more effective for your specific use cases
 - **What you'll build**: A customized Copilot setup with instructions, prompts, and chat modes that automatically generate consistent pieces of code following your project standards
-- **Prerequisites**:
-
-  - Basic understanding of GitHub and VS Code
-  - Completed "Getting Started with GitHub Copilot" exercise
-
+- **Prerequisites**: [Getting Started with GitHub Copilot](https://github.com/skills/getting-started-with-github-copilot) exercise
 - **How long**: This exercise takes less than 30 minutes to complete.
 
 In this exercise, you will:
@@ -25,7 +21,7 @@ In this exercise, you will:
 
 Simply copy the exercise to your account, then give your favorite Octocat (Mona) **about 20 seconds** to prepare the first lesson, then **refresh the page**.
 
-[![](https://img.shields.io/badge/Copy%20Exercise-%E2%86%92-1f883d?style=for-the-badge&logo=github&labelColor=197935)](https://github.com/new?template_owner=skills&template_name=customize-your-github-copilot-experience&owner=%40me&name=skills-customize-your-github-copilot-experience&description=Exercise:+Customize+Your+GitHub+Copilot+Experience&visibility=public)
+[![](https://img.shields.io/badge/Copy%20Exercise-%E2%86%92-1f883d?style=for-the-badge&logo=github&labelColor=197935)](https://github.com/new?template_owner=FidelusAleksander&template_name=customize-your-github-copilot-experience&owner=%40me&name=skills-customize-your-github-copilot-experience&description=Exercise:+Customize+Your+GitHub+Copilot+Experience&visibility=public)
 
 <details>
 <summary>Having trouble? 🤷</summary><br/>

@@ -4,7 +4,18 @@ You're Mr. Johnson, an IT teacher at Mergington High School who creates homework
 
 You've heard Copilot Instructions can help with that!
 
-<!-- TODO: Add website screenshot in a details section -->
+<details>
+<summary>Website screenshot</summary><br/>
+
+You will run this website in the first activity!
+
+<img width="1122" height="784" alt="image" src="https://github.com/user-attachments/assets/d8551981-a90d-4a83-b11b-6e337d7896a1" />
+
+
+</details>
+
+
+
 
 ### 📖 Theory: Repository Custom Instructions
 
@@ -80,9 +91,7 @@ Now that you've explored the project, let's create custom instructions to help C
 
    ```
 
-1. Save the file and open Copilot Chat in `Ask` mode.
-
-1. Test your instructions by asking Copilot about the project:
+1. Test your instructions by asking Copilot Chat about the project:
 
    ```text
    Briefly explain this project to me
@@ -90,7 +99,8 @@ Now that you've explored the project, let's create custom instructions to help C
 
 1. Observe how Copilot references your custom instructions in its response - you should see the `.github/copilot-instructions.md` file listed in the references section.
 
-   <!-- TODO: Add screenshot -->
+   <img width="504" height="183" alt="image" src="https://github.com/user-attachments/assets/2214ed9e-c165-4440-a23e-d2d33c0231a9" />
+
 
 1. Commit and push the `.github/copilot-instructions.md` file to the `main` branch
 

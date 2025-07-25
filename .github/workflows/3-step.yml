@@ -1,13 +1,14 @@
 name: Step 3
 
 on:
-  workflow_dispatch:
   push:
     branches:
       - main
     paths:
       - ".github/prompts/**"
       - "**/*.prompt.md"
+      - "config.json"
+      - "assignments/**"
 
 permissions:
   contents: read
@@ -20,6 +21,7 @@ env:
 jobs:
   find_exercise:
     name: Find Exercise Issue
+    if: github.run_number != 1
     uses: skills/exercise-toolkit/.github/workflows/find-exercise-issue.yml@v0.7.0
 
   check_step_work:
@@ -83,10 +85,10 @@ jobs:
             const newDirs = dirs.filter(dir => !knownAssignments.includes(dir));
 
             if (newDirs.length > 0) {
-              const message = `Found new assignment directories: ${newDirs.join(', ')}`;
+              const message = `Found new assignment directory`;
               core.setOutput('STEP_MESSAGE', message);
             } else {
-              const message = 'No new assignment directories found in assignments/ folder';
+              const message = 'No new assignment directory found in assignments/ folder';
               core.setOutput('STEP_MESSAGE', message);
               core.setFailed(message);
             }
