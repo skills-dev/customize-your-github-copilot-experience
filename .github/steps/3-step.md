@@ -71,7 +71,6 @@ Now let's create a reusable prompt that automates the entire assignment creation
    - Type just `/new-assignment` and the prompt will ask you what the assignment should be about
    - Or include the topic directly: `/new-assignment Building REST APIs with FastAPI framework`
 
-
    <details>
    <summary>💡 Assignment Topic Ideas</summary>
 
@@ -82,7 +81,7 @@ Now let's create a reusable prompt that automates the entire assignment creation
    ```text
    Data Structures in Python - lists, dictionaries, sets, and tuples
    ```
-   
+
    ```text
    Python Data Visualization - using matplotlib or plotly for charts and graphs
    ```
@@ -97,12 +96,16 @@ Now let's create a reusable prompt that automates the entire assignment creation
 
    </details>
 
-1. Verify the assignment was setup correctly by checking:
+1. Verify the new assignment appears correctly on the website preview.
 
+   <details>
+   <summary>Your assignment is missing? Check these items 🔍</summary>
+
+   - Refresh the page
    - A new directory was created in `assignments/`
-   - The `README.md` file follows your assignment template structure
-   - The assignment references your instruction files (look for them in Copilot's response references)
    - The `config.json` file was updated with the new assignment
+
+   </details>
 
 1. Review the generated assignment content to ensure it matches your established conventions.
 
