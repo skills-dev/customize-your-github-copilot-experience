@@ -68,7 +68,7 @@ Now let's create a reusable prompt that automates the entire assignment creation
 
 1. Run your prompt by typing `/new-assignment` in the chat input. You can either:
 
-   - Type just `/new-assignment` and the prompt will ask you what the assignment should be about
+   - Type just `/new-assignment` and Copilot will ask you what the assignment should be about
    - Or include the topic directly: `/new-assignment Building REST APIs with FastAPI framework`
 
    <details>
