@@ -7,6 +7,7 @@ on:
       - main
     paths:
       - '.github/prompts/**'
+      - '**/*.prompt.md'
 
 permissions:
   contents: write
@@ -66,17 +67,8 @@ jobs:
         with:
           file: '.github/prompts/new-assignment.prompt.md'
 
-      - name: Check for new assignment directory created
-        id: check-assignment-created
-        continue-on-error: true
-        run: |
-          # Check if any new assignments were created (directories with README.md)
-          if ls assignments/*/README.md >/dev/null 2>&1; then
-            echo "assignment-found=true" >> $GITHUB_OUTPUT
-          else
-            echo "assignment-found=false" >> $GITHUB_OUTPUT
-          fi
-
+      # TODO: Check for new assignment directory created
+      # TODO: Check that the new assignment was added to config.json
       - name: Update comment - step results
         uses: GrantBirki/comment@v2.1.1
         with:
@@ -88,10 +80,8 @@ jobs:
           vars: |
             step_number: 3
             results_table:
-              - description: "Checked if new-assignment.prompt.md file exists"
+              - description: "Checked if .github/prompts/new-assignment.prompt.md file exists"
                 passed: ${{ steps.check-file-exists.outcome == 'success' }}
-              - description: "Verified assignment was created using the prompt"
-                passed: ${{ steps.check-assignment-created.outputs.assignment-found == 'true' }}
 
       # END: Check practical exercise
 

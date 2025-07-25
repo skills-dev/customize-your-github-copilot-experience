@@ -7,6 +7,7 @@ on:
       - main
     paths:
       - '.github/chatmodes/**'
+      - '**/*.chatmode.md'
 
 permissions:
   contents: write

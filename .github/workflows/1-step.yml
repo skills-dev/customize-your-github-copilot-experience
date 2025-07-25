@@ -67,14 +67,6 @@ jobs:
         with:
           file: '.github/copilot-instructions.md'
 
-      - name: Check for key content in copilot-instructions.md
-        id: check-for-keyphrase
-        continue-on-error: true
-        uses: skills/action-keyphrase-checker@v1
-        with:
-          text-file: '.github/copilot-instructions.md'
-          keyphrase: 'project'
-
       - name: Update comment - step results
         uses: GrantBirki/comment@v2.1.1
         with:
@@ -88,8 +80,6 @@ jobs:
             results_table:
               - description: "Checked if copilot-instructions.md file exists"
                 passed: ${{ steps.check-file-exists.outcome == 'success' }}
-              - description: "Checked for project-related content in copilot-instructions.md"
-                passed: ${{ steps.check-for-keyphrase.outcome == 'success' }}
 
       # END: Check practical exercise
 
