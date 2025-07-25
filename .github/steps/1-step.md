@@ -1,27 +1,100 @@
-## Step 1: (replace-me: STEP-NAME)
+## Step 1: Setting Up Copilot Instructions
 
-(replace-me: OPTIONAL Brief story or scenario to introduce the step)
+You're Mr. Johnson, an IT teacher at Mergington High School who creates homework assignments and coding exercises for students. You maintain a static website to share these assignments and want to establish general standards for AI assistants to ensure consistent code quality and project structure.
 
-### 📖 Theory: (replace-me: Theory title)
+You've heard Copilot Instructions can help with that!
 
-<!-- GitHub-styled notifications can be used outside of ordered lists. Available options are: NOTE, IMPORTANT, WARNING, TIP, CAUTION -->
-<!--
-> [!NOTE]
-> (Important note or additional information relevant to this section)
- -->
+<!-- TODO: Add website screenshot in a details section -->
 
-(replace-me: Optional theory or background information relevant to this step)
+### 📖 Theory: Repository Custom Instructions
 
-### ⌨️ Activity: (replace-me: Activity title)
+Repository custom instructions let you provide Copilot with repository-specific guidance and preferences that help it understand your project context and standards. By creating a `.github/copilot-instructions.md` file, you can ensure that Copilot's suggestions consistently follow your project conventions and coding standards.
 
-1. (replace-me: First instruction)
-1. (replace-me: Second instruction)
-1. (replace-me: Additional instructions as needed)
+The complete set of instructions will be automatically added to all requests that you submit to Copilot Chat in your repository.
+
+> [!TIP] Writing Effective Instructions
+> Your instructions should be short, self-contained statements that provide Copilot with relevant information. Consider including:
+>
+> - An overview of the project's purpose and goals
+> - The folder structure and important directories
+> - Coding standards and conventions (naming, formatting, best practices)
+> - Specific tools, libraries, or frameworks used in the project
+>
+> See [GitHub Docs: Add repository instructions](https://docs.github.com/en/copilot/how-tos/custom-instructions/adding-repository-custom-instructions-for-github-copilot) for more information.
+
+### ⌨️ Activity: Explore the Educational Website Project
+
+To work with custom instructions, let's first set up our development environment and explore the project structure.
+
+1. Right-click the below button to open the **Create Codespace** page in a new tab. Use the default configuration.
+
+   [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/{{full_repo_name}}?quickstart=1)
+
+1. Confirm the **Repository** field is your copy of the exercise, not the original, then click the green **Create Codespace** button.
+
+   - ✅ Your copy: `/{{full_repo_name}}`
+   - ❌ Original: `/skills/customize-your-github-copilot-experience`
+
+1. Wait a moment for Visual Studio Code to load in your browser.
+
+1. Explore the project structure:
+
+   - Browse the `website/` folder to see the static website structure
+   - Look at the `assignments/` folder to understand the existing assignment formats
+
+1. Right-click on `website/index.html` and select **Show Preview** to see the website in action. Keep this preview tab open as we'll be making edits to the website throughout the exercise and you can see the updates live.
+
+### ⌨️ Activity: Create Repository Copilot Instructions
+
+Now that you've explored the project, let's create custom instructions to help Copilot understand Mr. Johnson's educational website project.
+
+1. In VS Code, create a new file called `.github/copilot-instructions.md`
+
+1. Add the following content to describe this educational project:
+
+   ```markdown
+    # Project Description
+
+    This project is Mr. Johnson's educational website for sharing homework assignments and coding exercises with students. Students can browse, view, and download assignments directly from the portal.
+
+
+    ## Project Structure
+
+    - [`assignments/`](../assignments/) Each homework assignment is stored in its own subfolder with a consistent structure.
+    - [`templates/`](../templates/) Reusable templates for new content
+    - [`website/`](../website/) The website serves as a static portal for browsing and viewing assignments. Only HTML, CSS, and JavaScript files are used here. Content is configurable via [`config.json`](../website/config.json) file to dynamically generate assignment lists and details.
+
+    ## Project Guidelines
+
+    - Maintain consistent styling across all pages
+    - Keep file and folder names descriptive and organized
+
+    ## Educational Standards
+
+    When generating content for this project:
+
+    - **Learning-focused**: All content should be designed with clear learning objectives and appropriate difficulty levels
+    - **Student-friendly**: Use clear, encouraging language that motivates students
+   ```
+
+1. Save the file and open Copilot Chat in `Ask` mode.
+
+1. Test your instructions by asking Copilot about the project:
+
+   ```text
+   Briefly explain this project to me
+   ```
+
+1. Observe how Copilot references your custom instructions in its response - you should see the `.github/copilot-instructions.md` file listed in the references section.
+
+1. Commit and push the `.github/copilot-instructions.md` file to the `main` branch
+
+1. Wait for Mona to prepare the next step!
 
 <details>
 <summary>Having trouble? 🤷</summary><br/>
 
-- (replace-me: Troubleshooting tip or hint)
-- (replace-me: Additional troubleshooting tips as needed)
+- The `.github/copilot-instructions.md` file should be at the root of the `.github` folder
+- Make sure you commited and pushed the changes.
 
 </details>

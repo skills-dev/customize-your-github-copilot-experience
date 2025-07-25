@@ -3,14 +3,12 @@ name: Step 2
 
 on:
   workflow_dispatch:
-  # Common event triggers: pull_request, push, issues, issue_comment (feel free to experiment)
-  # Docs: https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows
-  # Example:
-  # pull_request:
-  #   branches:
-  #     - main
-  #   types:
-  #     - closed
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/instructions/**'
+      - '**/*.instructions.md'
 
 permissions:
   contents: write
@@ -64,22 +62,20 @@ jobs:
 
       # START: Check practical exercise
 
-      # replace-me: Example of a grading check. You can add more checks as needed.
-      - name: Check if README file exists
+      - name: Check if assignments.instructions.md exists
         id: check-file-exists
         continue-on-error: true
         uses: skills/exercise-toolkit/actions/file-exists@v0.7.0
         with:
-          file: README.md
+          file: '.github/instructions/assignments.instructions.md'
 
-      # replace-me: Example of a grading check. You can add more checks as needed.
-      - name: Check for keyphrase in README.md
-        id: check-for-keyphrase
+      - name: Check for applyTo pattern in assignments.instructions.md
+        id: check-for-applyto
         continue-on-error: true
         uses: skills/action-keyphrase-checker@v1
         with:
-          text-file: README.md
-          keyphrase: Installation guide
+          text-file: '.github/instructions/assignments.instructions.md'
+          keyphrase: 'applyTo'
 
       - name: Update comment - step results
         uses: GrantBirki/comment@v2.1.1
@@ -92,10 +88,10 @@ jobs:
           vars: |
             step_number: 2
             results_table:
-              - description: "Checked if README.md file exists"
+              - description: "Checked if assignments.instructions.md file exists"
                 passed: ${{ steps.check-file-exists.outcome == 'success' }}
-              - description: "Checked for Installation guide in README.md"
-                passed: ${{ steps.check-for-keyphrase.outcome == 'success' }}
+              - description: "Checked for applyTo pattern in assignments.instructions.md"
+                passed: ${{ steps.check-for-applyto.outcome == 'success' }}
 
       # Add more checks as needed
 
@@ -107,7 +103,7 @@ jobs:
 
   post_next_step_content:
     name: Post next step content
-    needs: [find_exercise]
+    needs: [find_exercise, check_step_work]
     runs-on: ubuntu-latest
     env:
       ISSUE_REPOSITORY: ${{ github.repository }}
@@ -138,7 +134,7 @@ jobs:
         with:
           repository: ${{ env.ISSUE_REPOSITORY }}
           issue-number: ${{ env.ISSUE_NUMBER }}
-          file: ${{ env.STEP_2_FILE }}
+          file: ${{ env.STEP_3_FILE }}
 
       - name: Create comment - watching for progress
         uses: GrantBirki/comment@v2.1.1
