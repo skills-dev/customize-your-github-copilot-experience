@@ -70,7 +70,7 @@ Now let's create a specialized chat mode for brainstorming assignment ideas.
 
    - "What assignment topics are missing from my current curriculum?"
    - "Suggest 3 advanced Python assignments for my students"
-   - "What would be good follow-up assignments after data structures?"
+   - "What would be good follow-up assignment after data analysis assignment?"
 
 1. Verify the chat mode works correctly by checking:
 
