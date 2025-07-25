@@ -10,7 +10,7 @@ on:
       - "**/*.instructions.md"
 
 permissions:
-  contents: write
+  contents: read
   actions: write
   issues: write
 
@@ -82,7 +82,7 @@ jobs:
         uses: skills/action-keyphrase-checker@v1
         with:
           text-file: "assignments/games-in-python/README.md"
-          keyphrase: "🎯 Objective"
+          keyphrase: "Objective"
 
       - name: Check for Tasks section in games-in-python README
         id: check-for-tasks
@@ -90,7 +90,7 @@ jobs:
         uses: skills/action-keyphrase-checker@v1
         with:
           text-file: "assignments/games-in-python/README.md"
-          keyphrase: "📝 Tasks"
+          keyphrase: "Tasks"
 
       - name: Update comment - step results
         uses: GrantBirki/comment@v2.1.1
