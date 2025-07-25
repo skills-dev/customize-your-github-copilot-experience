@@ -7,11 +7,7 @@ _Learn how to customize GitHub Copilot to work better for your team and projects
 - **Who is this for**: Developers and educators who want to tailor Copilot's behavior to their specific workflows
 - **What you'll learn**: How to set up custom instructions, prompts, and chat modes to make Copilot more effective for your specific use cases
 - **What you'll build**: A customized Copilot setup with instructions, prompts, and chat modes that automatically generate consistent pieces of code following your project standards
-- **Prerequisites**:
-
-  - Basic understanding of GitHub and VS Code
-  - Completed "Getting Started with GitHub Copilot" exercise
-
+- **Prerequisites**: [Getting Started with GitHub Copilot](https://github.com/skills/getting-started-with-github-copilot) exercise
 - **How long**: This exercise takes less than 30 minutes to complete.
 
 In this exercise, you will:
