@@ -85,7 +85,7 @@ Now let's create a specialized chat mode for brainstorming assignment ideas.
 
 1. Commit and push your changes the new chat mode file: `.github/chatmodes/assignment-brainstorming.chatmode.md`
 
-1. Wait for Mona to prepare the next step!
+1. Wait for Mona to give you a final review!
 
 <details>
 <summary>Having trouble? 🤷</summary><br/>
