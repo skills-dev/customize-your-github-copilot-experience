@@ -15,8 +15,8 @@ Prompt files (`.prompt.md`) are reusable prompts most useful for common tasks in
 
 Prompt files can be selected with slash commands (`/`) in Copilot Chat, making complex workflows as simple as selecting from a menu.
 
-> [!TIP] Prompts - focus on "WHAT"
-> Prompt files describe the task to be performed (what should be done).
+> [!TIP]
+> Prompt files describe the task to be performed (**WHAT** should be done).
 >
 > Optionally, you can include task-specific guidelines about how the task should be performed, or you can reference custom instructions in the prompt file.
 >

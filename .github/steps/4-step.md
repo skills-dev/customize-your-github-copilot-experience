@@ -8,7 +8,7 @@ Custom chat modes (`.chatmode.md`) fundamentally change how Copilot Chat behaves
 
 While instructions guide **how** tasks are performed and prompts define **what** should be done, chat modes control **how the conversation itself operates** - the tone, available tools, and interaction patterns.
 
-> [!TIP] Chat Modes - focus on "HOW TO INTERACT"
+> [!TIP]
 > Chat modes define conversation behavior, response style, and available tools for specialized workflows.
 >
 > Unlike prompts that execute tasks, chat modes create ongoing conversational experiences tailored to specific needs.
