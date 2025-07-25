@@ -57,7 +57,7 @@ Now let's create a reusable prompt that automates the entire assignment creation
 
    ## Step 3: Update Website Configuration
 
-   Update the assignments list in [config.json](../../website/config.json) website configuration file to include the new assignment. For the dueDate field, use the current date plus 7 days unless specified otherwise.
+   Update the assignments list in [config.json](../../config.json) website configuration file to include the new assignment. For the dueDate field, use the current date plus 7 days unless specified otherwise.
    ```
 
 1. Save the file.
@@ -102,7 +102,7 @@ Now let's create a reusable prompt that automates the entire assignment creation
    - A new directory was created in `assignments/`
    - The `README.md` file follows your assignment template structure
    - The assignment references your instruction files (look for them in Copilot's response references)
-   - The `website/config.json` file was updated with the new assignment
+   - The `config.json` file was updated with the new assignment
 
 1. Review the generated assignment content to ensure it matches your established conventions.
 
@@ -110,7 +110,7 @@ Now let's create a reusable prompt that automates the entire assignment creation
 
    - The new prompt file: `.github/prompts/new-assignment.prompt.md`
    - The generated assignment directory and files
-   - Updated `website/config.json` configuration
+   - Updated `config.json` configuration
 
 1. Wait for Mona to prepare the next step!
 

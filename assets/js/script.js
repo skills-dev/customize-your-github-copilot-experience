@@ -19,7 +19,7 @@ class AssignmentPortal {
   }
 
   async loadConfig() {
-    const response = await fetch("assets/config.json");
+    const response = await fetch("config.json");
     if (!response.ok) {
       throw new Error("Failed to load configuration");
     }
