@@ -4,7 +4,18 @@ You're Mr. Johnson, an IT teacher at Mergington High School who creates homework
 
 You've heard Copilot Instructions can help with that!
 
-<!-- TODO: Add website screenshot in a details section -->
+<details>
+<summary>Website screenshot</summary><br/>
+
+You will run this website in the first activity!
+
+<img width="1122" height="784" alt="image" src="https://github.com/user-attachments/assets/d8551981-a90d-4a83-b11b-6e337d7896a1" />
+
+
+</details>
+
+
+
 
 ### 📖 Theory: Repository Custom Instructions
 
