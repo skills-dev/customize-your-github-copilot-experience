@@ -12,11 +12,11 @@ Unlike repository-wide instructions that apply everywhere, `.instructions.md` fi
 
 > You can also manually attach instructions using the **Add Context** button in Copilot Chat, however using `applyTo` patterns is much more convenient
 
-> [!TIP] Instructions - focus on "HOW"
-> Instructions should focus on **how a task should be done** - describing the guidelines, standards, and conventions used in that particular part of the codebase
+> [!TIP]
+> Instructions should focus on **HOW** a task should be done - describing the guidelines, standards, and conventions used in that particular part of the codebase
 >
-> Instructions are **NOT** meant to tell Copilot **what task should be done** - that's where your prompts come in!
-> 
+> Instructions are **NOT** meant to tell Copilot **WHAT** task should be done - that's where your prompts come in!
+>
 > See more in [VS Code Docs: Custom Instructions](https://code.visualstudio.com/docs/copilot/copilot-customization#_custom-instructions)
 
 Visual Studio Code by default will look for `*.instructions.md` files in `.github/instructions/` directory but that is configurable with [VS Code Settings](vscode://settings/chat.instructionsFilesLocations).
@@ -71,9 +71,9 @@ Now let's create targeted instructions specifically for assignment files to ensu
 
 1. Observe how Copilot references your instruction files in its response - you should see the `.github/instructions/assignments.instructions.md` file listed in the references section.
 
-<!-- TODO: Add screenshot -->
+  <!-- TODO: Add screenshot -->
 
-1. Apply the suggested changes that Copilot provides to update the assignment structure.
+1. Verify the **Games in Python** assignment looks consistent on the **Site Preview** you opened in last step, then apply the suggested changes.
 
 1. Commit and push your changes of the instruction files and the updated assignment to the `main` branch.
 

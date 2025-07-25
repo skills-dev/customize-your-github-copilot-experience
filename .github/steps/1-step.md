@@ -12,7 +12,7 @@ Repository custom instructions let you provide Copilot with repository-specific 
 
 The complete set of instructions will be automatically added to all requests that you submit to Copilot Chat in your repository.
 
-> [!TIP] Writing Effective Instructions
+> [!TIP]
 > Your instructions should be short, self-contained statements that provide Copilot with relevant information. Consider including:
 >
 > - An overview of the project's purpose and goals
@@ -35,7 +35,7 @@ To work with custom instructions, let's first set up our development environment
    - ✅ Your copy: `/{{full_repo_name}}`
    - ❌ Original: `/skills/customize-your-github-copilot-experience`
 
-1. Wait a moment for Visual Studio Code to load in your browser.
+1. Wait a moment for Visual Studio Code to load in your browser and for all extensions to install.
 
 1. Right-click on `index.html` and select **Show Preview** to see the website in action. Keep this preview tab open as we'll be making edits to the website throughout the exercise and you can see the updates live.
 
@@ -89,6 +89,8 @@ Now that you've explored the project, let's create custom instructions to help C
    ```
 
 1. Observe how Copilot references your custom instructions in its response - you should see the `.github/copilot-instructions.md` file listed in the references section.
+
+   <!-- TODO: Add screenshot -->
 
 1. Commit and push the `.github/copilot-instructions.md` file to the `main` branch
 

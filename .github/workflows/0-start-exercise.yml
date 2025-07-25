@@ -49,15 +49,14 @@ jobs:
             // Read and update config.json
             const config = JSON.parse(fs.readFileSync('config.json', 'utf8'));
 
-            // Update assignment dates: one future (14 days), others past
-            config.assignments[0].dueDate = getDate(14);   // 2 weeks ahead
+            // Update assignment dates
+            config.assignments[0].dueDate = getDate(-45);  // 45 days ago
             config.assignments[1].dueDate = getDate(-30);  // 30 days ago
-            config.assignments[2].dueDate = getDate(-45);  // 45 days ago
-            config.assignments[3].dueDate = getDate(-20);  // 20 days ago
+            config.assignments[2].dueDate = getDate(-20);  // 20 days ago
+            config.assignments[3].dueDate = getDate(14);   // 2 weeks ahead
 
             // Write updated config.json
             fs.writeFileSync('config.json', JSON.stringify(config, null, 2) + '\n');
-
 
       - name: Commit updated config.json
         uses: EndBug/add-and-commit@v9
@@ -92,7 +91,6 @@ jobs:
           issue-number: ${{ env.ISSUE_NUMBER }}
           file: ${{ env.STEP_1_FILE }}
           vars: |
-            login: ${{ github.actor }}
             full_repo_name: ${{ github.repository }}
 
       - name: Create comment - watching for progress
