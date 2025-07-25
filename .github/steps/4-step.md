@@ -47,7 +47,6 @@ Now let's create a specialized chat mode for brainstorming assignment ideas.
    💡 IDEA BURST: [3-5 rapid-fire suggestions]
    🎯 NEXT QUESTION: [What I need to know to help more]
 
-
    ## Rules
 
    - ⚡ Keep responses short
@@ -55,7 +54,6 @@ Now let's create a specialized chat mode for brainstorming assignment ideas.
    - 💡 Focus on concepts, not details
    - 🚫 Never write assignment specs
    - 📊 Base ideas on existing curriculum gaps
-  
    ```
 
 1. Save the file.
@@ -66,18 +64,19 @@ Now let's create a specialized chat mode for brainstorming assignment ideas.
 
 1. Select your custom chat mode from the chat mode dropdown list.
 
-1. Test the chat mode with questions like:
+1. Test the chat mode with questions Mr Johnson might ask. Notice the different response format you will receive!
 
-   - "What assignment topics are missing from my current curriculum?"
-   - "Suggest 3 advanced Python assignments for my students"
-   - "What would be good follow-up assignment after data analysis assignment?"
+   ```text
+   What assignment topics are missing from my current curriculum?
+   ```
 
-1. Verify the chat mode works correctly by checking:
+   ```text
+   Suggest 3 advanced Python assignments for my students
+   ```
 
-   - Responses follow the specified format (🔍 QUICK SCAN, 💡 IDEA BURST, 🎯 NEXT QUESTION)
-   - The mode focuses on ideation, not implementation details
-   - Each response ends with a specific question to continue the conversation
-   - The tone is energetic and brainstorm-focused
+   ```text
+   What would be good follow-up assignment after data analysis assignment?
+   ```
 
 1. Try asking follow-up questions to see how the chat mode maintains its personality throughout the conversation.
 
