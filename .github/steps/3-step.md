@@ -66,11 +66,42 @@ Now let's create a reusable prompt that automates the entire assignment creation
 
 1. Open Copilot Chat in VS Code and ensure you're in Agent mode.
 
-1. Run your prompt by typing `/new-assignment` in the chat input.
+1. Run your prompt by typing `/new-assignment` in the chat input. You can either:
 
-1. Follow the prompts and create a test assignment on a topic like "Basic Python Functions" or "JavaScript Arrays".
+   - Type just `/new-assignment` and the prompt will ask you what the assignment should be about
+   - Or include the topic directly: `/new-assignment Building REST APIs with FastAPI framework`
 
-1. Verify the prompt works correctly by checking:
+
+   <details>
+   <summary>💡 Assignment Topic Ideas</summary>
+
+   ```text
+   Python Text Processing - working with strings, file I/O, and text manipulation
+   ```
+
+   ```text
+   Data Structures in Python - lists, dictionaries, sets, and tuples
+   ```
+
+   ```text
+   Python Web Scraping Basics - using requests and BeautifulSoup to extract web data
+   ```
+
+   ```text
+   Python Data Visualization - using matplotlib or plotly for charts and graphs
+   ```
+
+   ```text
+   Building REST APIs with FastAPI framework
+   ```
+
+   ```text
+   Statistics with Python - data analysis and statistical calculations using pandas and numpy
+   ```
+
+   </details>
+
+1. Verify the assignment was setup correctly by checking:
 
    - A new directory was created in `assignments/`
    - The `README.md` file follows your assignment template structure
