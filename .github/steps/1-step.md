@@ -11,11 +11,7 @@ You will run this website in the first activity!
 
 <img width="1122" height="784" alt="image" src="https://github.com/user-attachments/assets/d8551981-a90d-4a83-b11b-6e337d7896a1" />
 
-
 </details>
-
-
-
 
 ### 📖 Theory: Repository Custom Instructions
 
@@ -48,13 +44,16 @@ To work with custom instructions, let's first set up our development environment
 
 1. Wait a moment for Visual Studio Code to load in your browser and for all extensions to install.
 
-1. Right-click on `index.html` and select **Show Preview** to see the website in action. Keep this preview tab open as we'll be making edits to the website throughout the exercise and you can see the updates live.
+1. Right-click on `index.html` and select **Show Preview** to see the website in action.
 
 1. Explore the project structure:
    - Browse the `assets/` folder to see the website assets (CSS, JavaScript, images)
    - Look at the `assignments/` folder to understand the existing assignment formats
    - Review `index.html` in the root directory to see the main website structure
    - Check out `config.json` in the root directory to see how the assignments are set up
+
+> [!IMPORTANT]
+> Keep the preview tab open as we'll be making edits to the website throughout the exercise and you can see the updates live.
 
 ### ⌨️ Activity: Create Repository Copilot Instructions
 
@@ -65,7 +64,6 @@ Now that you've explored the project, let's create custom instructions to help C
 1. Add the following content to describe this educational project:
 
    ```markdown
-    
    # Project Description
 
    This project is Mr. Johnson's educational website for sharing homework assignments and coding exercises with students. Students can browse, view, and download assignments directly from the portal.
@@ -75,7 +73,7 @@ Now that you've explored the project, let's create custom instructions to help C
    - [`assignments/`](../assignments/) Each homework assignment is stored in its own subfolder with a consistent structure.
    - [`templates/`](../templates/) Reusable templates for new content
    - [`assets/`](../assets/) Contains the website assets including CSS, JavaScript, images, and configuration files
-   - [`index.html`](../index.html) The main website page that serves as a static portal for browsing and viewing assignments. Content is configurable via   [`config.json`](../config.json) file to dynamically generate assignment lists and details.
+   - [`index.html`](../index.html) The main website page that serves as a static portal for browsing and viewing assignments. Content is configurable via [`config.json`](../config.json) file to dynamically generate assignment lists and details.
 
    ## Project Guidelines
 
@@ -88,7 +86,6 @@ Now that you've explored the project, let's create custom instructions to help C
 
    - **Learning-focused**: All content should be designed with clear learning objectives and appropriate difficulty levels
    - **Student-friendly**: Use clear, encouraging language that motivates students
-
    ```
 
 1. Test your instructions by asking Copilot Chat about the project:
@@ -100,7 +97,6 @@ Now that you've explored the project, let's create custom instructions to help C
 1. Observe how Copilot references your custom instructions in its response - you should see the `.github/copilot-instructions.md` file listed in the references section.
 
    <img width="504" height="183" alt="image" src="https://github.com/user-attachments/assets/2214ed9e-c165-4440-a23e-d2d33c0231a9" />
-
 
 1. Commit and push the `.github/copilot-instructions.md` file to the `main` branch
 

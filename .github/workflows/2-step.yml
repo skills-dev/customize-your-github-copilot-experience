@@ -23,7 +23,6 @@ jobs:
     if: github.run_number != 1
     uses: skills/exercise-toolkit/.github/workflows/find-exercise-issue.yml@v0.7.0
 
-  # This job is optional. We often call it a "grading job". If the step is not graded, remove it.
   check_step_work:
     name: Check step work
     runs-on: ubuntu-latest
@@ -77,6 +76,22 @@ jobs:
           text-file: ".github/instructions/assignments.instructions.md"
           keyphrase: "applyTo"
 
+      - name: Check for Objective section in games-in-python README
+        id: check-for-objective
+        continue-on-error: true
+        uses: skills/action-keyphrase-checker@v1
+        with:
+          text-file: "assignments/games-in-python/README.md"
+          keyphrase: "🎯 Objective"
+
+      - name: Check for Tasks section in games-in-python README
+        id: check-for-tasks
+        continue-on-error: true
+        uses: skills/action-keyphrase-checker@v1
+        with:
+          text-file: "assignments/games-in-python/README.md"
+          keyphrase: "📝 Tasks"
+
       - name: Update comment - step results
         uses: GrantBirki/comment@v2.1.1
         with:
@@ -92,6 +107,10 @@ jobs:
                 passed: ${{ steps.check-file-exists.outcome == 'success' }}
               - description: "Checked for applyTo pattern in assignments.instructions.md"
                 passed: ${{ steps.check-for-applyto.outcome == 'success' }}
+              - description: "Checked for 🎯 Objective section in games-in-python README"
+                passed: ${{ steps.check-for-objective.outcome == 'success' }}
+              - description: "Checked for 📝 Tasks section in games-in-python README"
+                passed: ${{ steps.check-for-tasks.outcome == 'success' }}
 
       # END: Check practical exercise
 
