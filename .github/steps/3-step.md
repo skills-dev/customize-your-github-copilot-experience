@@ -82,11 +82,7 @@ Now let's create a reusable prompt that automates the entire assignment creation
    ```text
    Data Structures in Python - lists, dictionaries, sets, and tuples
    ```
-
-   ```text
-   Python Web Scraping Basics - using requests and BeautifulSoup to extract web data
-   ```
-
+   
    ```text
    Python Data Visualization - using matplotlib or plotly for charts and graphs
    ```

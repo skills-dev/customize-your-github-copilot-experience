@@ -81,7 +81,9 @@ Now that you've explored the project, let's create custom instructions to help C
 
 1. Test your instructions by asking Copilot about the project:
 
-   > Ask Copilot: "What can you tell me about this project?"
+   ```text
+   Briefly explain this project to me
+   ```
 
 1. Observe how Copilot references your custom instructions in its response - you should see the `.github/copilot-instructions.md` file listed in the references section.
 
