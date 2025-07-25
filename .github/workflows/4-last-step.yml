@@ -60,12 +60,12 @@ jobs:
 
       # START: Check practical exercise
 
-      - name: Check if homework-brainstorming.chatmode.md exists
+      - name: Check if assignment-brainstorming.chatmode.md exists
         id: check-file-exists
         continue-on-error: true
         uses: skills/exercise-toolkit/actions/file-exists@v0.7.0
         with:
-          file: '.github/chatmodes/homework-brainstorming.chatmode.md'
+          file: '.github/chatmodes/assignment-brainstorming.chatmode.md'
 
       - name: Update comment - step results
         uses: GrantBirki/comment@v2.1.1
@@ -78,7 +78,7 @@ jobs:
           vars: |
             step_number: 4
             results_table:
-              - description: "Checked if homework-brainstorming.chatmode.md file exists"
+              - description: "Checked if assignment-brainstorming.chatmode.md file exists"
                 passed: ${{ steps.check-file-exists.outcome == 'success' }}
 
       # END: Check practical exercise

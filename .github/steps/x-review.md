@@ -15,6 +15,8 @@ Here's a recap of your accomplishments:
 
 ### What's next?
 
-- [Integrate MCP with Copilot](https://skills.github.com/integration-mcp-with-copilot) - Learn how to extend Copilot with Model Context Protocol
-- [Modernize Legacy Code](https://skills.github.com/) - Use Copilot to help refactor and improve existing codebases
-- [Copilot documentation](https://docs.github.com/en/copilot) - Explore advanced Copilot features and capabilities
+Take another GitHub Skills exercise on [GitHub Learn](https://learn.github.com/skills):
+
+- [Integrate MCP with Copilot](https://github.com/skills/integrate-mcp-with-copilot) - Learn how to extend Copilot with Model Context Protocol. You will learn about MCP tools which can also be used in chatmodes and prompts!
+- [Modernize Legacy Code](https://github.com/skills/modernize-your-legacy-code-with-github-copilot) - Use Copilot to help refactor and improve existing codebases.
+- [GitHub Pages](https://github.com/skills-dev/github-pages) - Learn how to publish static website's like the one in this exercise.

@@ -1,11 +1,9 @@
 name: Step 0 # Start Exercise
 
 on:
-  workflow_dispatch:
-  # NOTE: Make sure the repository is a template before enabling this trigger.
-  # push:
-  #   branches:
-  #     - main
+  push:
+    branches:
+      - main
 
 permissions:
   contents: write
@@ -25,6 +23,7 @@ jobs:
       exercise-title: "Customize Your GitHub Copilot Experience"
       intro-message: "Learn how to customize GitHub Copilot to work better for your team and projects."
 
+  #TODO: Add job to update dates in config.json
   post_next_step_content:
     name: Post next step content
     runs-on: ubuntu-latest
