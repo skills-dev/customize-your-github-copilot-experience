@@ -91,9 +91,7 @@ Now that you've explored the project, let's create custom instructions to help C
 
    ```
 
-1. Save the file and open Copilot Chat in `Ask` mode.
-
-1. Test your instructions by asking Copilot about the project:
+1. Test your instructions by asking Copilot Chat about the project:
 
    ```text
    Briefly explain this project to me
