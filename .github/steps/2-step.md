@@ -71,7 +71,8 @@ Now let's create targeted instructions specifically for assignment files to ensu
 
 1. Observe how Copilot references your instruction files in its response - you should see the `.github/instructions/assignments.instructions.md` file listed in the references section.
 
-  <!-- TODO: Add screenshot -->
+     <img width="492" height="376" alt="image" src="https://github.com/user-attachments/assets/dbf26be3-5940-4619-af4e-0a4380f16494" />
+
 
 1. Verify the **Games in Python** assignment looks consistent on the **Site Preview** you opened in last step, then apply the suggested changes.
 
