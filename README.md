@@ -16,7 +16,7 @@ _Learn how to customize GitHub Copilot to work better for your team and projects
 
 In this exercise, you will:
 
-1. Set up repository-wide custom instructions to ensure consistent code generation
+1. Set up repository-wide custom instructions to provide Copilot the essential project context
 1. Create targeted custom instructions for specific file types and directories
 1. Build reusable prompt templates for common tasks like homework assignments
 1. Configure custom chat modes for specialized workflows
