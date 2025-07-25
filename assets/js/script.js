@@ -120,7 +120,7 @@ class AssignmentPortal {
         <div class="next-due-urgency ${urgencyClass}">⏰ ${urgencyText}</div>
       </div>
       <div class="next-due-actions">
-        <a href="pages/assignment.html?id=${assignment.id}" class="btn btn-next-due">
+        <a href="assets/pages/assignment.html?id=${assignment.id}" class="btn btn-next-due">
           Start Assignment →
         </a>
       </div>
@@ -177,7 +177,7 @@ class AssignmentPortal {
           </div>
         </div>
         <div class="assignment-actions-compact">
-          <a href="pages/assignment.html?id=${assignment.id}" class="btn btn-primary">
+          <a href="assets/pages/assignment.html?id=${assignment.id}" class="btn btn-primary">
             View Details
           </a>
         </div>

@@ -35,7 +35,7 @@ class AssignmentPage {
   }
 
   async loadConfig() {
-    const response = await fetch("../config.json");
+    const response = await fetch("../../config.json");
     if (!response.ok) {
       throw new Error("Failed to load configuration");
     }
@@ -72,7 +72,7 @@ class AssignmentPage {
       .map((attachment) => {
         const icon = this.getFileIcon(attachment.type);
         return `
-                <a href="../${this.assignment.path}/${attachment.file}" 
+                <a href="../../${this.assignment.path}/${attachment.file}" 
                    download 
                    class="btn btn-download">
                    ${icon} Download ${attachment.name}
@@ -98,7 +98,7 @@ class AssignmentPage {
 
   async loadReadmeContent() {
     try {
-      const readmePath = `../${this.assignment.path}/README.md`;
+      const readmePath = `../../${this.assignment.path}/README.md`;
       const response = await fetch(readmePath);
 
       if (!response.ok) {

@@ -8,7 +8,8 @@ This project is Mr. Johnson's educational website for sharing homework assignmen
 
 - [`assignments/`](../assignments/) Each homework assignment is stored in its own subfolder with a consistent structure.
 - [`templates/`](../templates/) Reusable templates for new content
-- [`website/`](../website/) The website serves as a static portal for browsing and viewing assignments. Only HTML, CSS, and JavaScript files are used here. Content is configurable via [`config.json`](../website/config.json) file to dynamically generate assignment lists and details.
+- [`assets/`](../assets/) Contains the website assets including CSS, JavaScript, images, and configuration files
+- [`index.html`](../index.html) The main website page that serves as a static portal for browsing and viewing assignments. Content is configurable via [`config.json`](../config.json) file to dynamically generate assignment lists and details.
 
 ## Project Guidelines
 

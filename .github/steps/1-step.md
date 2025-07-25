@@ -37,12 +37,13 @@ To work with custom instructions, let's first set up our development environment
 
 1. Wait a moment for Visual Studio Code to load in your browser.
 
+1. Right-click on `index.html` and select **Show Preview** to see the website in action. Keep this preview tab open as we'll be making edits to the website throughout the exercise and you can see the updates live.
+
 1. Explore the project structure:
-
-   - Browse the `website/` folder to see the static website structure
+   - Browse the `assets/` folder to see the website assets (CSS, JavaScript, images)
    - Look at the `assignments/` folder to understand the existing assignment formats
-
-1. Right-click on `website/index.html` and select **Show Preview** to see the website in action. Keep this preview tab open as we'll be making edits to the website throughout the exercise and you can see the updates live.
+   - Review `index.html` in the root directory to see the main website structure
+   - Check out `config.json` in the root directory to see how the assignments are set up
 
 ### ⌨️ Activity: Create Repository Copilot Instructions
 
@@ -53,28 +54,30 @@ Now that you've explored the project, let's create custom instructions to help C
 1. Add the following content to describe this educational project:
 
    ```markdown
-    # Project Description
+    
+   # Project Description
 
-    This project is Mr. Johnson's educational website for sharing homework assignments and coding exercises with students. Students can browse, view, and download assignments directly from the portal.
+   This project is Mr. Johnson's educational website for sharing homework assignments and coding exercises with students. Students can browse, view, and download assignments directly from the portal.
 
+   ## Project Structure
 
-    ## Project Structure
+   - [`assignments/`](../assignments/) Each homework assignment is stored in its own subfolder with a consistent structure.
+   - [`templates/`](../templates/) Reusable templates for new content
+   - [`assets/`](../assets/) Contains the website assets including CSS, JavaScript, images, and configuration files
+   - [`index.html`](../index.html) The main website page that serves as a static portal for browsing and viewing assignments. Content is configurable via   [`config.json`](../config.json) file to dynamically generate assignment lists and details.
 
-    - [`assignments/`](../assignments/) Each homework assignment is stored in its own subfolder with a consistent structure.
-    - [`templates/`](../templates/) Reusable templates for new content
-    - [`website/`](../website/) The website serves as a static portal for browsing and viewing assignments. Only HTML, CSS, and JavaScript files are used here. Content is configurable via [`config.json`](../website/config.json) file to dynamically generate assignment lists and details.
+   ## Project Guidelines
 
-    ## Project Guidelines
+   - Maintain consistent styling across all pages
+   - Keep file and folder names descriptive and organized
 
-    - Maintain consistent styling across all pages
-    - Keep file and folder names descriptive and organized
+   ## Educational Standards
 
-    ## Educational Standards
+   When generating content for this project:
 
-    When generating content for this project:
+   - **Learning-focused**: All content should be designed with clear learning objectives and appropriate difficulty levels
+   - **Student-friendly**: Use clear, encouraging language that motivates students
 
-    - **Learning-focused**: All content should be designed with clear learning objectives and appropriate difficulty levels
-    - **Student-friendly**: Use clear, encouraging language that motivates students
    ```
 
 1. Save the file and open Copilot Chat in `Ask` mode.

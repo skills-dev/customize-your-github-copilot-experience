@@ -10,7 +10,7 @@
       "id": "python-basics",
       "title": "Python Basics",
       "description": "Variables, data types, conditionals, and loops",
-      "path": "../assignments/python-basics",
+      "path": "assignments/python-basics",
       "dueDate": "2025-07-15",
       "attachments": [
         {
@@ -24,14 +24,14 @@
       "id": "games-in-python",
       "title": "Games in Python",
       "description": "Creating games using Python",
-      "path": "../assignments/games-in-python",
+      "path": "assignments/games-in-python",
       "dueDate": "2025-09-01"
     },
     {
       "id": "python-classes",
       "title": "Python Classes",
       "description": "Defining and using classes in Python",
-      "path": "../assignments/python-classes",
+      "path": "assignments/python-classes",
       "dueDate": "2025-08-05",
       "attachments": [
         {
@@ -45,7 +45,7 @@
       "id": "data-analysis",
       "title": "Data Analysis",
       "description": "Basics of data analysis: loading, exploring, and visualizing data in Python.",
-      "path": "../assignments/data-analysis",
+      "path": "assignments/data-analysis",
       "dueDate": "2025-07-29",
       "attachments": [
         {
@@ -60,10 +60,5 @@
         }
       ]
     }
-  ],
-  "settings": {
-    "enableDownloads": true,
-    "showDueDates": true,
-    "allowLateSubmissions": false
-  }
+  ]
 }
