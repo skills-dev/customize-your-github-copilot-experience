@@ -1,4 +1,4 @@
-## Step 2: Creating Custom Instructions
+## Step 2: File-Specific Instructions
 
 After setting up general project standards, you realize that your assignment files need more specific formatting rules. While your repository-wide instructions work great for general coding standards, you don't want to clutter them with detailed assignment structure requirements that get included in every chat message.
 
@@ -12,18 +12,18 @@ Unlike repository-wide instructions that apply everywhere, `.instructions.md` fi
 
 > You can also manually attach instructions using the **Add Context** button in Copilot Chat, however using `applyTo` patterns is much more convenient
 
+Visual Studio Code by [default](vscode://settings/chat.instructionsFilesLocations) will look for `*.instructions.md` files in `.github/instructions/` directory.
+
 > [!TIP]
 > Instructions should focus on **HOW** a task should be done - describing the guidelines, standards, and conventions used in that particular part of the codebase
 >
-> Instructions are **NOT** meant to tell Copilot **WHAT** task should be done - that's where your prompts come in!
->
 > See more in [VS Code Docs: Custom Instructions](https://code.visualstudio.com/docs/copilot/copilot-customization#_custom-instructions)
-
-Visual Studio Code by default will look for `*.instructions.md` files in `.github/instructions/` directory but that is configurable with [VS Code Settings](vscode://settings/chat.instructionsFilesLocations).
 
 ### ⌨️ Activity: Create Assignment-Specific Instructions
 
 Now let's create targeted instructions specifically for assignment files to ensure they follow consistent structure and formatting.
+
+1. First, let's examine the existing assignment template. Open `templates/assignment-template.md` to see the structure we want all assignments to follow.
 
 1. Create a new file called `.github/instructions/assignments.instructions.md`
 
@@ -63,6 +63,8 @@ Now let's create targeted instructions specifically for assignment files to ensu
 
 1. Open the file `assignments/games-in-python/README.md` in VS Code. This assignment doesn't match all the conventions you've setup as a teacher.
 
+1. Take a moment to review the current structure of this assignment file. Notice how it differs from the template structure you examined earlier. You can also view how it currently appears on the **Site Preview** tab.
+
 1. With the assignment file open, ask Copilot Chat in `Agent` mode to update the assignment structure:
 
    ```text
@@ -71,12 +73,14 @@ Now let's create targeted instructions specifically for assignment files to ensu
 
 1. Observe how Copilot references your instruction files in its response - you should see the `.github/instructions/assignments.instructions.md` file listed in the references section.
 
-     <img width="492" height="376" alt="image" src="https://github.com/user-attachments/assets/dbf26be3-5940-4619-af4e-0a4380f16494" />
+ <img width="492" height="376" alt="image" src="https://github.com/user-attachments/assets/dbf26be3-5940-4619-af4e-0a4380f16494" />
 
+1. Compare the suggested changes with the original file structure to see how Copilot applied your instructions. Then apply the suggested changes and check how the updated assignment now appears on the **Site Preview**.
 
-1. Verify the **Games in Python** assignment looks consistent on the **Site Preview** you opened in last step, then apply the suggested changes.
+1. Commit both files with descriptive messages and push your changes to the `main` branch:
 
-1. Commit and push your changes of the instruction files and the updated assignment to the `main` branch.
+   - `.github/instructions/assignments.instructions.md`
+   - `assignments/games-in-python/README.md`
 
 1. Wait for Mona to prepare the next step!
 
