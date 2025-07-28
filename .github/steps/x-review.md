@@ -1,10 +1,8 @@
 ## Review
 
-_Congratulations, you've completed this exercise and learned how to customize GitHub Copilot for your specific needs!_
+_Congratulations, you've completed this exercise and learned how to customize GitHub Copilot!_
 
 <img src="https://octodex.github.com/images/jetpacktocat.png" alt="celebrate" width=200 align=right>
-
-You've successfully customized GitHub Copilot to work specifically for your teaching needs at Mergington High School. This exercise demonstrated how to tailor Copilot's behavior to match specific project requirements and workflows.
 
 Here's a recap of your accomplishments:
 
