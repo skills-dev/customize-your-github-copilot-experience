@@ -77,7 +77,7 @@ jobs:
           vars: |
             step_number: 4
             results_table:
-              - description: "Checked if assignment-brainstorming.chatmode.md file exists"
+              - description: "Created assignment-brainstorming.chatmode.md file"
                 passed: ${{ steps.check-file-exists.outcome == 'success' }}
 
       # END: Check practical exercise

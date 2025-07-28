@@ -124,7 +124,7 @@ jobs:
           vars: |
             step_number: 3
             results_table:
-              - description: "Checked if .github/prompts/new-assignment.prompt.md file exists"
+              - description: "Created new-assignment.prompt.md file"
                 passed: ${{ steps.check-file-exists.outcome == 'success' }}
               - description: ${{ steps.check-new-assignment-dir.outputs.STEP_MESSAGE }}
                 passed: ${{ steps.check-new-assignment-dir.outcome == 'success' }}
