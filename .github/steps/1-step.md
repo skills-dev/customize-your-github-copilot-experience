@@ -13,7 +13,7 @@ You will run this website in the first activity!
 
 </details>
 
-### 📖 Theory: Repository Custom Instructions
+### 📖 Theory: What are repository custom instructions?
 
 Repository custom instructions let you provide Copilot with repository-specific guidance and preferences that help it understand your project context and standards. By creating a `.github/copilot-instructions.md` file, you can ensure that Copilot's suggestions consistently follow your project conventions and coding standards.
 
@@ -57,7 +57,7 @@ To work with custom instructions, let's first set up our development environment
 
 ### ⌨️ Activity: Create Repository Copilot Instructions
 
-Now that you've explored the project, let's create custom instructions to help Copilot understand Mr. Johnson's educational website project.
+Now that you've explored the project, let's create custom instructions to help Copilot understand your educational website project.
 
 1. In VS Code, create a new file called `.github/copilot-instructions.md`
 
@@ -66,7 +66,7 @@ Now that you've explored the project, let's create custom instructions to help C
    ```markdown
    # Project Description
 
-   This project is Mr. Johnson's educational website for sharing homework assignments and coding exercises with students. Students can browse, view, and download assignments directly from the portal.
+   This project is an educational website for sharing homework assignments and coding exercises with students. Students can browse, view, and download assignments directly from the portal.
 
    ## Project Structure
 
@@ -98,7 +98,7 @@ Now that you've explored the project, let's create custom instructions to help C
 
    <img width="504" height="183" alt="image" src="https://github.com/user-attachments/assets/2214ed9e-c165-4440-a23e-d2d33c0231a9" />
 
-1. Commit and push the `.github/copilot-instructions.md` file to the `main` branch
+1. Commit the `.github/copilot-instructions.md` file to the `main` branch and push to GitHub.
 
 1. Wait for Mona to prepare the next step!
 
