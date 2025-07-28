@@ -15,6 +15,10 @@ Prompt files (`.prompt.md`) are reusable prompts most useful for common tasks in
 
 Prompt files can be selected with slash commands (`/`) in Copilot Chat, making complex workflows as simple as selecting from a menu.
 
+You can reference other workspace files, prompt files, or instructions files by using Markdown links. Use relative paths to reference these files, and ensure that the paths are correct based on the location of the prompt file.
+
+Visual Studio Code by default will look for `*.prompt.md` files in `.github/prompts/` directory but that is configurable with [VS Code Settings](vscode://settings/chat.promptFilesLocations).
+
 > [!TIP]
 > Prompt files describe the task to be performed (**WHAT** should be done).
 >
@@ -22,13 +26,9 @@ Prompt files can be selected with slash commands (`/`) in Copilot Chat, making c
 >
 > See more in [VS Code Docs: Prompt Files](https://code.visualstudio.com/docs/copilot/copilot-customization#_prompt-files-experimental)
 
-You can reference other workspace files, prompt files, or instructions files by using Markdown links. Use relative paths to reference these files, and ensure that the paths are correct based on the location of the prompt file.
-
-Visual Studio Code by default will look for `*.prompt.md` files in `.github/prompts/` directory but that is configurable with [VS Code Settings](vscode://settings/chat.promptFilesLocations).
-
 ### ⌨️ Activity: Create Assignment Prompt
 
-Now let's create a reusable prompt that automates the entire assignment creation process.
+Now let's create a reusable prompt that automates the entire assignment creation process. This is perfect for a prompt file because creating assignments involves multiple repetitive steps that follow the same pattern every time - exactly the kind of workflow that benefits from automation.
 
 1. Create a new file called `.github/prompts/new-assignment.prompt.md`
 
@@ -59,8 +59,6 @@ Now let's create a reusable prompt that automates the entire assignment creation
 
    Update the assignments list in [config.json](../../config.json) website configuration file to include the new assignment. For the dueDate field, use the current date plus 7 days unless specified otherwise.
    ```
-
-1. Save the file.
 
 ### ⌨️ Activity: Test the Assignment Prompt
 
