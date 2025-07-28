@@ -20,11 +20,12 @@ You can reference other workspace files, prompt files, or instructions files by 
 Visual Studio Code by default will look for `*.prompt.md` files in `.github/prompts/` directory but that is configurable with [VS Code Settings](vscode://settings/chat.promptFilesLocations).
 
 > [!TIP]
-> Prompt files describe the task to be performed (**WHAT** should be done).
->
-> Optionally, you can include task-specific guidelines about how the task should be performed, or you can reference custom instructions in the prompt file.
+> Use prompt files to define repeatable tasks and workflows.
+> 
+> When writing prompts focus on **WHAT** needs to be done. You can reference instructions for the **HOW**.
 >
 > See more in [VS Code Docs: Prompt Files](https://code.visualstudio.com/docs/copilot/copilot-customization#_prompt-files-experimental)
+
 
 ### ⌨️ Activity: Create Assignment Prompt
 

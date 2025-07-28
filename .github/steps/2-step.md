@@ -12,12 +12,10 @@ Unlike repository-wide instructions that apply everywhere, `.instructions.md` fi
 
 > You can also manually attach instructions using the **Add Context** button in Copilot Chat, however using `applyTo` patterns is much more convenient
 
-Visual Studio Code by default will look for `*.instructions.md` files in `.github/instructions/` directory but that is configurable with [VS Code Settings](vscode://settings/chat.instructionsFilesLocations).
+Visual Studio Code by [default](vscode://settings/chat.instructionsFilesLocations) will look for `*.instructions.md` files in `.github/instructions/` directory.
 
 > [!TIP]
 > Instructions should focus on **HOW** a task should be done - describing the guidelines, standards, and conventions used in that particular part of the codebase
->
-> Instructions are **NOT** meant to tell Copilot **WHAT** task should be done - that's where your prompts come in!
 >
 > See more in [VS Code Docs: Custom Instructions](https://code.visualstudio.com/docs/copilot/copilot-customization#_custom-instructions)
 

@@ -20,14 +20,9 @@ Repository custom instructions let you provide Copilot with repository-specific 
 The complete set of instructions will be automatically added to all requests that you submit to Copilot Chat in your repository.
 
 > [!TIP]
-> Your instructions should be short, self-contained statements that provide Copilot with relevant information. Consider including:
+> Keep instructions short and focused on project purpose, folder structure, coding standards, and key tools used.
 >
-> - An overview of the project's purpose and goals
-> - The folder structure and important directories
-> - Coding standards and conventions (naming, formatting, best practices)
-> - Specific tools, libraries, or frameworks used in the project
->
-> See [GitHub Docs: Add repository instructions](https://docs.github.com/en/copilot/how-tos/custom-instructions/adding-repository-custom-instructions-for-github-copilot) for more information.
+> See [GitHub Docs: Repository Custom Instructions](https://docs.github.com/en/copilot/how-tos/custom-instructions/adding-repository-custom-instructions-for-github-copilot) for more information.
 
 ### ⌨️ Activity: Explore the Educational Website Project
 
