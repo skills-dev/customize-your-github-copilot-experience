@@ -6,11 +6,11 @@ You want to make sure all your assignments follow the same pattern and structure
 
 ### 📖 Theory: Custom Instruction Files
 
-Instruction files (`.instructions.md`) provide targeted guidance for specific files or directories in your project.
+Instruction files (`*.instructions.md`) provide targeted guidance for specific files or directories in your project.
 
-Unlike repository-wide instructions that apply everywhere, `.instructions.md` files use `applyTo` patterns in the frontmatter to target specific files with glob syntax. This allows VS Code to automatically apply the instructions whenever Copilot works on files matching that pattern.
+Unlike repository-wide instructions that apply everywhere, `*.instructions.md` files use `applyTo` patterns in the frontmatter to target specific files with [glob syntax](https://code.visualstudio.com/docs/editor/glob-patterns). This allows VS Code to automatically apply the instructions whenever Copilot works on files matching that pattern.
 
-> You can also manually attach instructions using the **Add Context** button in Copilot Chat, however using `applyTo` patterns is much more convenient
+> You can also manually attach instructions using the **Add Context** button in Copilot Chat, however using `applyTo` patterns is much more convenient as they apply automatically when working on matching files.
 
 Visual Studio Code by [default](vscode://settings/chat.instructionsFilesLocations) will look for `*.instructions.md` files in `.github/instructions/` directory.
 
@@ -40,19 +40,21 @@ Now let's create targeted instructions specifically for assignment files to ensu
 
    ## 1. Template Usage
 
-   - Assignment markdown files must follow the structure in `templates/assignment-template.md`.
+   - Assignment markdown files must follow the structure in [`templates/assignment-template.md`](../../templates/assignment-template.md).
    - The assignment must be created as a `README.md` file
    - Do not remove or skip required sections from the template.
 
    ## 2. Section Guidance
 
+   The section headers should reflect the structure in the template, including the exact icon usage.
+
    - **Title**: Replace `[Assignment Title]` with a short, descriptive name (e.g., `Python Basics`, `Loops and Conditionals`, `Functions and Modules`).
    - **Objective**: Write 1-2 sentences summarizing what the student will learn or accomplish. Focus on the main skills or concepts.
    - **Tasks**: For each task:
-     - Use a specific, action-oriented task name
-     - In the Description, clearly state what the student must do.
-     - In Requirements, use bullet points to list the expected outcomes or features. Be specific and measurable
-     - Provide example input/output in code blocks if helpful.
+      - Use a specific, action-oriented task name
+      - In the Description, clearly state what the student must do.
+      - In Requirements, use bullet points to list the expected outcomes or features. Be specific and measurable
+      - Provide example input/output in code blocks if helpful.
 
    Do not include extra sections unless explicitly specified.
    ```
