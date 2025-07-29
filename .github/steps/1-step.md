@@ -56,6 +56,8 @@ Now that you've explored the project, let's create custom instructions to help C
 
 1. In VS Code, create a new file called `.github/copilot-instructions.md`
 
+   > ❕ **Important:** Make sure the file name is exactly `.github/copilot-instructions.md`. This specific filename is required for Copilot to recognize it as repository instructions.
+
 1. Add the following content to describe this educational project:
 
    ```markdown

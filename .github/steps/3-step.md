@@ -11,7 +11,7 @@ It's a perfect scenario to have a reusable prompt just for this!
 
 ### 📖 Theory: Prompt Files
 
-Prompt files (`.prompt.md`) are reusable prompts most useful for common tasks in your project.
+Prompt files (`*.prompt.md`) are reusable prompts most useful for common tasks in your project.
 
 Prompt files can be selected with slash commands (`/`) in Copilot Chat, making complex workflows as simple as selecting from a menu.
 
@@ -21,7 +21,7 @@ Visual Studio Code by default will look for `*.prompt.md` files in `.github/prom
 
 > [!TIP]
 > Use prompt files to define repeatable tasks and workflows.
-> 
+>
 > When writing prompts focus on **WHAT** needs to be done. You can reference instructions for the **HOW**.
 >
 > See more in [VS Code Docs: Prompt Files](https://code.visualstudio.com/docs/copilot/copilot-customization#_prompt-files-experimental)

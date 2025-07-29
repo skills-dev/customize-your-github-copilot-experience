@@ -6,11 +6,11 @@ You want to make sure all your assignments follow the same pattern and structure
 
 ### 📖 Theory: Custom Instruction Files
 
-Instruction files (`.instructions.md`) provide targeted guidance for specific files or directories in your project.
+Instruction files (`*.instructions.md`) provide targeted guidance for specific files or directories in your project.
 
-Unlike repository-wide instructions that apply everywhere, `.instructions.md` files use `applyTo` patterns in the frontmatter to target specific files with glob syntax. This allows VS Code to automatically apply the instructions whenever Copilot works on files matching that pattern.
+Unlike repository-wide instructions that apply everywhere, `.instructions.md` files use `applyTo` patterns in the frontmatter to target specific files with [glob syntax](https://code.visualstudio.com/docs/editor/glob-patterns). This allows VS Code to automatically apply the instructions whenever Copilot works on files matching that pattern.
 
-> You can also manually attach instructions using the **Add Context** button in Copilot Chat, however using `applyTo` patterns is much more convenient
+> You can also manually attach instructions using the **Add Context** button in Copilot Chat, however using `applyTo` patterns is much more convenient as they apply automatically when working on matching files.
 
 Visual Studio Code by [default](vscode://settings/chat.instructionsFilesLocations) will look for `*.instructions.md` files in `.github/instructions/` directory.
 
