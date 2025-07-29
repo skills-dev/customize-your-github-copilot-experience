@@ -1,6 +1,6 @@
 # Customize Your GitHub Copilot Experience
 
-_Learn how to customize GitHub Copilot to work better for your team and projects._
+_Customize GitHub Copilot's behavior with custom instructions, prompts, and chat modes for your specific development workflows._
 
 ## Welcome
 
