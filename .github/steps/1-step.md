@@ -1,6 +1,6 @@
 ## Step 1: Setting Up Copilot Instructions
 
-You're Mr. Johnson, an IT teacher at Mergington High School who creates homework assignments and coding exercises for students. You maintain a static website to share these assignments and want to establish general standards for AI assistants to ensure consistent code quality and project structure.
+You're a teacher at Mergington High School who creates homework assignments and coding exercises for students. You maintain a static website to share these assignments and want to establish general standards for AI assistants to ensure consistent code quality and project structure.
 
 You've heard Copilot Instructions can help with that!
 

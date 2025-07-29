@@ -2,7 +2,7 @@
   "course": {
     "title": "Computer Science",
     "school": "Mergington High School",
-    "teacher": "Mr. Johnson",
+    "teacher": "teacher",
     "description": "Introduction to programming and computer science"
   },
   "assignments": [
