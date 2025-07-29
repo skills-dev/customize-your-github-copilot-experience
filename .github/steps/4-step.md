@@ -27,7 +27,7 @@ Now let's create a specialized chat mode for brainstorming assignment ideas.
 
    ```markdown
    ---
-   description: 💡 Assignment brainstorming assistant for teacher's CS class
+   description: 💡 Assignment brainstorming assistant
    tools: ["codebase", "search"]
    ---
 

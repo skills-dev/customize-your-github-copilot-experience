@@ -42,7 +42,7 @@ class AssignmentPortal {
   renderCourseInfo() {
     const { course } = this.config;
     document.getElementById("course-title").textContent = course.title;
-    document.getElementById("course-info").textContent = `${course.teacher} - ${course.school}`;
+    document.getElementById("course-info").textContent = course.school;
     document.getElementById("course-description").textContent = course.description;
     document.title = `${course.school} - ${course.title}`;
   }
