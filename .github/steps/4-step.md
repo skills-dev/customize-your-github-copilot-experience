@@ -27,7 +27,7 @@ Now let's create a specialized chat mode for brainstorming assignment ideas.
 
    ```markdown
    ---
-   description: 💡 Assignment brainstorming assistant for Mr. Johnson's CS class
+   description: 💡 Assignment brainstorming assistant
    tools: ["codebase", "search"]
    ---
 
@@ -63,7 +63,7 @@ Now let's create a specialized chat mode for brainstorming assignment ideas.
    <img width="379" height="218" alt="image" src="https://github.com/user-attachments/assets/4effffa7-b8ef-4830-8050-9c777f9f0189" />
 
 
-1. Test the chat mode with questions Mr Johnson might ask. Notice the different response format you will receive!
+1. Test the chat mode with questions a teacher might ask. Notice the different response format you will receive!
 
    ```text
    What assignment topics are missing from my current curriculum?
