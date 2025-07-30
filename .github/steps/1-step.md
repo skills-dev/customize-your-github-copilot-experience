@@ -5,7 +5,7 @@ You're a teacher at Mergington High School who creates homework assignments and 
 You've heard Copilot Instructions can help with that!
 
 <details>
-<summary>Website screenshot</summary><br/>
+<summary>Website screenshot 📸</summary><br/>
 
 You will run this website in the first activity!
 
