@@ -88,11 +88,13 @@ Now that you've explored the project, let's create custom instructions to help C
    - **Student-friendly**: Use clear, encouraging language that motivates students
    ```
 
-1. Test your instructions by asking Copilot Chat about the project:
+1. Test your instructions by asking Copilot about the project:
 
-   ```text
-   Briefly explain this project to me
-   ```
+   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+   >
+   > ```prompt
+   > Briefly explain this project to me
+   > ```
 
 1. Observe how Copilot references your custom instructions in its response - you should see the `.github/copilot-instructions.md` file listed in the references section.
 
