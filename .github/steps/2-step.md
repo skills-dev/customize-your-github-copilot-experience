@@ -6,18 +6,16 @@ You want to make sure all your assignments follow the same pattern and structure
 
 ### 📖 Theory: Custom Instruction Files
 
-Instruction files (`*.instructions.md`) provide targeted guidance for specific files or directories in your project.
+Instruction files (`*.instructions.md`) provide Copilot targeted guidance for specific files or directories in your project.
 
-Unlike repository-wide instructions that apply everywhere, `*.instructions.md` files use `applyTo` patterns in the [frontmatter](https://jekyllrb.com/docs/front-matter/) to target specific files with [glob syntax](https://code.visualstudio.com/docs/editor/glob-patterns). This allows VS Code to automatically apply the instructions whenever Copilot works on files matching that pattern.
+Unlike repository-wide instructions that apply everywhere, these files use the `applyTo` field in the [frontmatter](https://jekyllrb.com/docs/front-matter/) using [glob syntax](https://code.visualstudio.com/docs/editor/glob-patterns) to target specific files. This automatically applies the instructions whenever Copilot works on files matching that pattern. Alternatley, you can manually attach instructions using the **Add Context** button in Copilot Chat.
 
-> You can also manually attach instructions using the **Add Context** button in Copilot Chat, however using `applyTo` patterns is much more convenient as they apply automatically when working on matching files.
-
-Visual Studio Code by [default](vscode://settings/chat.instructionsFilesLocations) will look for `*.instructions.md` files in `.github/instructions/` directory.
+Visual Studio Code will look for `*.instructions.md` files in `.github/instructions/` directory by [default](vscode://settings/chat.instructionsFilesLocations).
 
 > [!TIP]
 > Instructions should focus on **HOW** a task should be done - describing the guidelines, standards, and conventions used in that particular part of the codebase
 >
-> See more in [VS Code Docs: Custom Instructions](https://code.visualstudio.com/docs/copilot/copilot-customization#_custom-instructions)
+> See the [VS Code Docs: Custom Instructions](https://code.visualstudio.com/docs/copilot/copilot-customization#_custom-instructions) page for more information.
 
 ### ⌨️ Activity: Create Assignment-Specific Instructions
 
