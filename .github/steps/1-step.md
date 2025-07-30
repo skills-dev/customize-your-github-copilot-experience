@@ -5,11 +5,11 @@ You're a teacher at Mergington High School who creates homework assignments and 
 You've heard Copilot Instructions can help with that!
 
 <details>
-<summary>Website screenshot</summary><br/>
+<summary>Website screenshot 📸</summary><br/>
 
 You will run this website in the first activity!
 
-<img width="1122" height="784" alt="image" src="https://github.com/user-attachments/assets/d8551981-a90d-4a83-b11b-6e337d7896a1" />
+<img width="600" alt="screenshot of homework website" src="https://github.com/user-attachments/assets/2383b6e9-64d5-4907-94b3-b67153efb008" />
 
 </details>
 
@@ -20,9 +20,9 @@ Repository custom instructions let you provide Copilot with repository-specific 
 The complete set of instructions will be automatically added to all requests that you submit to Copilot Chat in your repository.
 
 > [!TIP]
-> Keep instructions short and focused on project purpose, folder structure, coding standards, and key tools used.
->
-> See [GitHub Docs: Repository Custom Instructions](https://docs.github.com/en/copilot/how-tos/custom-instructions/adding-repository-custom-instructions-for-github-copilot) for more information.
+> Keep instructions short and focused on the "how" of the project. This could be purpose, folder structure, coding standards, key tools, expected formats, etc.
+
+See the [GitHub Docs: Repository Custom Instructions](https://docs.github.com/en/copilot/how-tos/custom-instructions/adding-repository-custom-instructions-for-github-copilot) page for more information.
 
 ### ⌨️ Activity: Explore the Educational Website Project
 
@@ -39,16 +39,19 @@ To work with custom instructions, let's first set up our development environment
 
 1. Wait a moment for Visual Studio Code to load in your browser and for all extensions to install.
 
+   - Ensure the **Live Preview** extension is activated.
+   - Ensure the **Python** extension is activated.
+
 1. Right-click on `index.html` and select **Show Preview** to see the website in action.
 
-1. Explore the project structure:
-   - Browse the `assets/` folder to see the website assets (CSS, JavaScript, images)
-   - Look at the `assignments/` folder to understand the existing assignment formats
-   - Review `index.html` in the root directory to see the main website structure
-   - Check out `config.json` in the root directory to see how the assignments are set up
+   > ❕ **Important**: Keep the preview tab open to see the live updates. We will be making edits throughout the exercise.
 
-> [!IMPORTANT]
-> Keep the preview tab open as we'll be making edits to the website throughout the exercise and you can see the updates live.
+1. Explore the project structure:
+
+   - Browse the `assets/` folder to see the website assets (CSS, JavaScript, images).
+   - Look at the `assignments/` folder to understand the existing assignment formats.
+   - Review `index.html` in the root directory to see the main website structure.
+   - Review `config.json` in the root directory to see how the assignments are set up.
 
 ### ⌨️ Activity: Create Repository Copilot Instructions
 
@@ -56,9 +59,9 @@ Now that you've explored the project, let's create custom instructions to help C
 
 1. In VS Code, create a new file called `.github/copilot-instructions.md`
 
-   > ❕ **Important:** Make sure the file name is exactly `.github/copilot-instructions.md`. This specific filename is required for Copilot to recognize it as repository instructions.
+   > ❕ **Important:** Make sure the file name is correct. This specific filename is required for Copilot to recognize it.
 
-1. Add the following content to describe this educational project:
+1. Add the following content so Copilot understands the project's purpose, structure, and requirements:
 
    ```markdown
    # Project Description
@@ -85,17 +88,19 @@ Now that you've explored the project, let's create custom instructions to help C
    - **Student-friendly**: Use clear, encouraging language that motivates students
    ```
 
-1. Test your instructions by asking Copilot Chat about the project:
+1. Test your instructions by asking Copilot about the project:
 
-   ```text
-   Briefly explain this project to me
-   ```
+   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+   >
+   > ```prompt
+   > Briefly explain this project to me
+   > ```
 
-1. Observe how Copilot references your custom instructions in its response - you should see the `.github/copilot-instructions.md` file listed in the references section.
+1. Notice that Copilot uses your custom instructions as a reference in the response.
 
    <img width="504" height="183" alt="image" src="https://github.com/user-attachments/assets/2214ed9e-c165-4440-a23e-d2d33c0231a9" />
 
-1. Commit the `.github/copilot-instructions.md` file to the `main` branch and push to GitHub.
+1. Commit the `.github/copilot-instructions.md` file to the `main` branch and push it to GitHub.
 
 1. Wait for Mona to prepare the next step!
 

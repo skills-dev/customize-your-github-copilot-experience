@@ -2,32 +2,27 @@
 
 Now that you've established instructions for assignments, you want to streamline creating new assignments.
 
-Creating assignments is a repetetive task and involves multiple steps.
+Creating assignments is a repetetive task and involves multiple steps, a perfect scenario for a reusable prompt!
 
 - Creating the assignment
 - Updating the website configuration to load the new assignment
 
-It's a perfect scenario to have a reusable prompt just for this!
-
 ### 📖 Theory: Prompt Files
 
-Prompt files (`*.prompt.md`) are reusable prompts most useful for common tasks in your project.
+Prompt files (`*.prompt.md`) are resusable prompts to simplify common and useful tasks in your project. They are selected in Copilot Chat using slash commands (`/`).
 
-Prompt files can be selected with slash commands (`/`) in Copilot Chat, making complex workflows as simple as selecting from a menu.
+They can reference other workspace files, prompt files, or instructions files by using Markdown-style links relative to the prompt file location.
 
-You can reference other workspace files, prompt files, or instructions files by using Markdown links. Use relative paths to reference these files, and ensure that the paths are correct based on the location of the prompt file.
-
-Visual Studio Code by default will look for `*.prompt.md` files in `.github/prompts/` directory but that is configurable with [VS Code Settings](vscode://settings/chat.promptFilesLocations).
+Visual Studio Code will look for `*.prompt.md` files in `.github/prompts/` directory by [default](vscode://settings/chat.promptFilesLocations).
 
 > [!TIP]
 > Use prompt files to define repeatable tasks and workflows.
 >
 > When writing prompts focus on **WHAT** needs to be done. You can reference instructions for the **HOW**.
->
-> See more in [VS Code Docs: Prompt Files](https://code.visualstudio.com/docs/copilot/copilot-customization#_prompt-files-experimental)
 
+See the [VS Code Docs: Prompt Files](https://code.visualstudio.com/docs/copilot/copilot-customization#_prompt-files-experimental) page for more information.
 
-### ⌨️ Activity: Create Assignment Prompt
+### ⌨️ Activity: Create an Assignment Prompt
 
 Now let's create a reusable prompt that automates the entire assignment creation process. This is perfect for a prompt file because creating assignments involves multiple repetitive steps that follow the same pattern every time - exactly the kind of workflow that benefits from automation.
 
@@ -63,46 +58,48 @@ Now let's create a reusable prompt that automates the entire assignment creation
 
 ### ⌨️ Activity: Test the Assignment Prompt
 
-1. Open Copilot Chat in VS Code and ensure you're in Agent mode.
+1. Open Copilot Chat in VS Code and ensure you're in `Agent` mode.
 
-1. Run your prompt by typing `/new-assignment` in the chat input. You can either:
+1. Run your prompt by typing `/new-assignment` in the chat input. There are 2 options:
 
-   - Type just `/new-assignment` and Copilot will ask you what the assignment should be about
-   - Or include the topic directly: `/new-assignment Building REST APIs with FastAPI framework`
+   - Type just `/new-assignment` without a description. Copilot will ask what the assignment should be about.
+   - Include the topic directly: `/new-assignment Building REST APIs with FastAPI framework`
 
-   <details>
-   <summary>💡 Assignment Topic Ideas</summary>
+      <details>
+      <summary>💡 Assignment Topic Ideas</summary>
 
-   ```text
-   Python Text Processing - working with strings, file I/O, and text manipulation
-   ```
+      ```text
+      Python Text Processing - working with strings, file I/O, and text manipulation
+      ```
 
-   ```text
-   Data Structures in Python - lists, dictionaries, sets, and tuples
-   ```
+      ```text
+      Data Structures in Python - lists, dictionaries, sets, and tuples
+      ```
 
-   ```text
-   Python Data Visualization - using matplotlib or plotly for charts and graphs
-   ```
+      ```text
+      Python Data Visualization - using matplotlib or plotly for charts and graphs
+      ```
 
-   ```text
-   Building REST APIs with FastAPI framework
-   ```
+      ```text
+      Building REST APIs with FastAPI framework
+      ```
 
-   ```text
-   Statistics with Python - data analysis and statistical calculations using pandas and numpy
-   ```
+      ```text
+      Statistics with Python - data analysis and statistical calculations using pandas and numpy
+      ```
 
-   </details>
+      </details>
 
 1. Verify the new assignment appears correctly on the website preview.
 
    <details>
-   <summary>Your assignment is missing? Check these items 🔍</summary>
+   <summary>Assignment not showing? 🔍</summary>
 
-   - Refresh the page
-   - A new directory was created in `assignments/`
-   - The `config.json` file was updated with the new assignment
+   Check these items:
+
+   - Refresh the page.
+   - A new directory was created in `assignments/`.
+   - The `config.json` file was updated with the new assignment.
 
    </details>
 
@@ -111,14 +108,14 @@ Now let's create a reusable prompt that automates the entire assignment creation
 1. Commit and push your changes:
 
    - The new prompt file: `.github/prompts/new-assignment.prompt.md`
-   - The generated assignment directory and files
-   - Updated `config.json` configuration
+   - The generated assignment directory and files.
+   - Updated `config.json` configuration.
 
 1. Wait for Mona to prepare the next step!
 
 <details>
 <summary>Having trouble? 🤷</summary><br/>
 
-- Make sure the prompt file is in `.github/prompts/` directory with the `.prompt.md` extension
+- Make sure the prompt file is in the `.github/prompts/` directory with the `.prompt.md` extension.
 
 </details>
