@@ -96,7 +96,7 @@ Now that you've explored the project, let's create custom instructions to help C
    > Briefly explain this project to me
    > ```
 
-1. Observe how Copilot references your custom instructions in its response - you should see the `.github/copilot-instructions.md` file listed in the references section.
+1. Notice that Copilot uses your custom instructions as a reference in the response.
 
    <img width="504" height="183" alt="image" src="https://github.com/user-attachments/assets/2214ed9e-c165-4440-a23e-d2d33c0231a9" />
 
