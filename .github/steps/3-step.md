@@ -65,30 +65,30 @@ Now let's create a reusable prompt that automates the entire assignment creation
    - Type just `/new-assignment` and Copilot will ask you what the assignment should be about
    - Or include the topic directly: `/new-assignment Building REST APIs with FastAPI framework`
 
-   <details>
-   <summary>💡 Assignment Topic Ideas</summary>
+      <details>
+      <summary>💡 Assignment Topic Ideas</summary>
 
-   ```text
-   Python Text Processing - working with strings, file I/O, and text manipulation
-   ```
+      ```text
+      Python Text Processing - working with strings, file I/O, and text manipulation
+      ```
 
-   ```text
-   Data Structures in Python - lists, dictionaries, sets, and tuples
-   ```
+      ```text
+      Data Structures in Python - lists, dictionaries, sets, and tuples
+      ```
 
-   ```text
-   Python Data Visualization - using matplotlib or plotly for charts and graphs
-   ```
+      ```text
+      Python Data Visualization - using matplotlib or plotly for charts and graphs
+      ```
 
-   ```text
-   Building REST APIs with FastAPI framework
-   ```
+      ```text
+      Building REST APIs with FastAPI framework
+      ```
 
-   ```text
-   Statistics with Python - data analysis and statistical calculations using pandas and numpy
-   ```
+      ```text
+      Statistics with Python - data analysis and statistical calculations using pandas and numpy
+      ```
 
-   </details>
+      </details>
 
 1. Verify the new assignment appears correctly on the website preview.
 
