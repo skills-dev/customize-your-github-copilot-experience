@@ -4,14 +4,12 @@ Now that you have instructions, prompts, and templates working together, you wan
 
 ### 📖 Theory: Custom Chat Modes
 
-Custom chat modes (`*.chatmode.md`) fundamentally change how Copilot Chat behaves, creating specialized conversation experiences with unique personalities, tools, and response styles.
+Custom chat modes (`*.chatmode.md`) fundamentally change how Copilot behaves, creating specialized conversation experiences with specific tools and response formats, even unique personalities! They are selected from a dropdown list in the Copilot Chat interface.
 
-Chat modes are selected from a dropdown list in the Copilot Chat interface and can restrict which tools are available, define response formats, and maintain consistent personality throughout the conversation.
-
-Visual Studio Code by default looks for `*.chatmode.md` files in `.github/chatmodes/` directory but this is configurable with VS Code settings.
+Visual Studio Code will look for `*.chatmode.md` files in `.github/chatmodes/` directory by [default](vscode://settings/chat.modeFilesLocations).
 
 > [!TIP]
-> Learn more about Chat Modes in:
+> Learn more about Chat Modes:
 >
 > - [VS Code Docs: Custom Chat Modes](https://code.visualstudio.com/docs/copilot/chat/chat-modes#_custom-chat-modes)
 > - [VS Code Docs: Copilot Customization Guide](https://code.visualstudio.com/docs/copilot/copilot-customization)
