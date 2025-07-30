@@ -58,12 +58,12 @@ Now let's create a reusable prompt that automates the entire assignment creation
 
 ### ⌨️ Activity: Test the Assignment Prompt
 
-1. Open Copilot Chat in VS Code and ensure you're in Agent mode.
+1. Open Copilot Chat in VS Code and ensure you're in `Agent` mode.
 
-1. Run your prompt by typing `/new-assignment` in the chat input. You can either:
+1. Run your prompt by typing `/new-assignment` in the chat input. There are 2 options:
 
-   - Type just `/new-assignment` and Copilot will ask you what the assignment should be about
-   - Or include the topic directly: `/new-assignment Building REST APIs with FastAPI framework`
+   - Type just `/new-assignment` without a description. Copilot will ask what the assignment should be about.
+   - Include the topic directly: `/new-assignment Building REST APIs with FastAPI framework`
 
       <details>
       <summary>💡 Assignment Topic Ideas</summary>
@@ -93,11 +93,13 @@ Now let's create a reusable prompt that automates the entire assignment creation
 1. Verify the new assignment appears correctly on the website preview.
 
    <details>
-   <summary>Your assignment is missing? Check these items 🔍</summary>
+   <summary>Assignment not showing? 🔍</summary>
 
-   - Refresh the page
-   - A new directory was created in `assignments/`
-   - The `config.json` file was updated with the new assignment
+   Check these items:
+
+   - Refresh the page.
+   - A new directory was created in `assignments/`.
+   - The `config.json` file was updated with the new assignment.
 
    </details>
 
@@ -106,14 +108,14 @@ Now let's create a reusable prompt that automates the entire assignment creation
 1. Commit and push your changes:
 
    - The new prompt file: `.github/prompts/new-assignment.prompt.md`
-   - The generated assignment directory and files
-   - Updated `config.json` configuration
+   - The generated assignment directory and files.
+   - Updated `config.json` configuration.
 
 1. Wait for Mona to prepare the next step!
 
 <details>
 <summary>Having trouble? 🤷</summary><br/>
 
-- Make sure the prompt file is in `.github/prompts/` directory with the `.prompt.md` extension
+- Make sure the prompt file is in the `.github/prompts/` directory with the `.prompt.md` extension.
 
 </details>
