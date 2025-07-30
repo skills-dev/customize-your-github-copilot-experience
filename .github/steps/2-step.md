@@ -14,8 +14,8 @@ Visual Studio Code will look for `*.instructions.md` files in `.github/instructi
 
 > [!TIP]
 > Instructions should focus on **HOW** a task should be done - describing the guidelines, standards, and conventions used in that particular part of the codebase
->
-> See the [VS Code Docs: Custom Instructions](https://code.visualstudio.com/docs/copilot/copilot-customization#_custom-instructions) page for more information.
+
+See the [VS Code Docs: Custom Instructions](https://code.visualstudio.com/docs/copilot/copilot-customization#_custom-instructions) page for more information.
 
 ### ⌨️ Activity: Create Assignment-Specific Instructions
 
