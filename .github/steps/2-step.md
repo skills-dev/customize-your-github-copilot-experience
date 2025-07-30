@@ -1,6 +1,6 @@
 ## Step 2: File-Specific Instructions
 
-After setting up general project standards, you realize that your assignment files need more specific formatting rules. While your repository-wide instructions work great for general coding standards, you don't want to clutter them with detailed assignment structure requirements that get included in every chat message.
+With the general project instructions ready, you realize you need more specific formatting rules related to just the assignments. While your repository-wide instructions work great for general coding standards, you don't want to clutter them with detailed assignment structure requirements that get included in every chat message.
 
 You want to make sure all your assignments follow the same pattern and structure so students have a consistent experience, but these rules should only apply when working on assignment files.
 
