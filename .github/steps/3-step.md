@@ -2,22 +2,18 @@
 
 Now that you've established instructions for assignments, you want to streamline creating new assignments.
 
-Creating assignments is a repetetive task and involves multiple steps.
+Creating assignments is a repetetive task and involves multiple steps, a perfect scenario for a reusable prompt!
 
 - Creating the assignment
 - Updating the website configuration to load the new assignment
 
-It's a perfect scenario to have a reusable prompt just for this!
-
 ### 📖 Theory: Prompt Files
 
-Prompt files (`*.prompt.md`) are reusable prompts most useful for common tasks in your project.
+Prompt files (`*.prompt.md`) are resusable prompts to simplify common and useful tasks in your project. They are selected in Copilot Chat using slash commands (`/`).
 
-Prompt files can be selected with slash commands (`/`) in Copilot Chat, making complex workflows as simple as selecting from a menu.
+They can reference other workspace files, prompt files, or instructions files by using Markdown-style links relative to the prompt file location.
 
-You can reference other workspace files, prompt files, or instructions files by using Markdown links. Use relative paths to reference these files, and ensure that the paths are correct based on the location of the prompt file.
-
-Visual Studio Code by default will look for `*.prompt.md` files in `.github/prompts/` directory but that is configurable with [VS Code Settings](vscode://settings/chat.promptFilesLocations).
+Visual Studio Code will look for `*.prompt.md` files in `.github/prompts/` directory by [default](vscode://settings/chat.promptFilesLocations).
 
 > [!TIP]
 > Use prompt files to define repeatable tasks and workflows.
