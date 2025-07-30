@@ -9,7 +9,7 @@ You've heard Copilot Instructions can help with that!
 
 You will run this website in the first activity!
 
-<img width="1122" height="784" alt="image" src="https://github.com/user-attachments/assets/d8551981-a90d-4a83-b11b-6e337d7896a1" />
+<img width="600" alt="screenshot of homework website" src="https://github.com/user-attachments/assets/2383b6e9-64d5-4907-94b3-b67153efb008" />
 
 </details>
 
