@@ -82,17 +82,17 @@ Now let's create a specialized chat mode for brainstorming assignment ideas.
 
 1. Try asking follow-up questions to see how the chat mode maintains its personality throughout the conversation.
 
-1. Commit and push your changes the new chat mode file: `.github/chatmodes/assignment-brainstorming.chatmode.md`
+1. Commit and push your changes for the new chat mode file: `.github/chatmodes/assignment-brainstorming.chatmode.md`
 
 1. Wait for Mona to give you a final review!
 
 <details>
 <summary>Having trouble? 🤷</summary><br/>
 
-- Make sure the chat mode file is in `.github/chatmodes/` directory with the `.chatmode.md` extension
-- Chat modes are selected from the dropdown list at the top of the chat interface, not with `@` mentions
-- If the chat mode doesn't appear in the dropdown, restart VS Code or reload the window
-- The `tools` array in frontmatter controls which capabilities the chat mode can access
-- Chat modes maintain their personality throughout the entire conversation thread
+- Make sure the chat mode file is in `.github/chatmodes/` directory with the `.chatmode.md` extension.
+- Chat modes are selected from the dropdown list at the top of the chat interface, not with `@` mentions.
+- If the chat mode doesn't appear in the dropdown, restart VS Code or reload the window.
+- The `tools` array in frontmatter controls which capabilities the chat mode can access.
+- Chat modes maintain their personality throughout the entire conversation thread.
 
 </details>
