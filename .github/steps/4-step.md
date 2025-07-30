@@ -15,7 +15,7 @@ Visual Studio Code will look for `*.chatmode.md` files in `.github/chatmodes/` d
 > - [VS Code Docs: Copilot Customization Guide](https://code.visualstudio.com/docs/copilot/copilot-customization)
 
 
-### ⌨️ Activity: Create Assignment Brainstorming Chat Mode
+### ⌨️ Activity: Create an Assignment Brainstorming Chat Mode
 
 Now let's create a specialized chat mode for brainstorming assignment ideas.
 
