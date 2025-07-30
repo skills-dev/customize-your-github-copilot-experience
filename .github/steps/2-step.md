@@ -65,9 +65,11 @@ Now let's create targeted instructions specifically for assignment files to ensu
 
 1. With the assignment file open, ask Copilot in `Agent` mode to update the assignment structure:
 
-   ```text
-   Update this assignment file to follow the project standards and template structure
-   ```
+   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+   >
+   > ```prompt
+   > Update this assignment file to follow the project standards and template structure
+   > ```
 
 1. Observe how Copilot references the general project instructions and the assignement specific instruction files.
 
