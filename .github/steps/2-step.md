@@ -63,19 +63,19 @@ Now let's create targeted instructions specifically for assignment files to ensu
 
 1. Take a moment to review the current structure of this assignment file. Notice how it differs from the template structure you examined earlier. You can also view how it currently appears on the **Site Preview** tab.
 
-1. With the assignment file open, ask Copilot Chat in `Agent` mode to update the assignment structure:
+1. With the assignment file open, ask Copilot in `Agent` mode to update the assignment structure:
 
    ```text
    Update this assignment file to follow the project standards and template structure
    ```
 
-1. Observe how Copilot references your instruction files in its response - you should see the `.github/instructions/assignments.instructions.md` file listed in the references section.
+1. Observe how Copilot references the general project instructions and the assignement specific instruction files.
 
  <img width="492" height="376" alt="image" src="https://github.com/user-attachments/assets/dbf26be3-5940-4619-af4e-0a4380f16494" />
 
 1. Compare the suggested changes with the original file structure to see how Copilot applied your instructions. Then apply the suggested changes and check how the updated assignment now appears on the **Site Preview**.
 
-1. Commit both files with descriptive messages and push your changes to the `main` branch:
+1. Commit both files to the `main` branch and push your changes to GitHub.
 
    - `.github/instructions/assignments.instructions.md`
    - `assignments/games-in-python/README.md`
