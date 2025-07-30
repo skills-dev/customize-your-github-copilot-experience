@@ -37,7 +37,7 @@ To work with custom instructions, let's first set up our development environment
    - ✅ Your copy: `/{{full_repo_name}}`
    - ❌ Original: `/skills/customize-your-github-copilot-experience`
 
-1. Wait a moment for Visual Studio Code to load in your browser for all extensions to install.
+1. Wait a moment for Visual Studio Code to load in your browser and for all extensions to install.
 
    - Ensure the **Live Preview** extension is activated.
    - Ensure the **Python** extension is activated.
@@ -48,10 +48,10 @@ To work with custom instructions, let's first set up our development environment
 
 1. Explore the project structure:
 
-   - Browse the `assets/` folder to see the website assets (CSS, JavaScript, images)
-   - Look at the `assignments/` folder to understand the existing assignment formats
-   - Review `index.html` in the root directory to see the main website structure
-   - Check out `config.json` in the root directory to see how the assignments are set up
+   - Browse the `assets/` folder to see the website assets (CSS, JavaScript, images).
+   - Look at the `assignments/` folder to understand the existing assignment formats.
+   - Review `index.html` in the root directory to see the main website structure.
+   - Review `config.json` in the root directory to see how the assignments are set up.
 
 ### ⌨️ Activity: Create Repository Copilot Instructions
 
@@ -59,7 +59,7 @@ Now that you've explored the project, let's create custom instructions to help C
 
 1. In VS Code, create a new file called `.github/copilot-instructions.md`
 
-   > ❕ **Important:** Make sure the file name is exactly `.github/copilot-instructions.md`. This specific filename is required for Copilot to recognize it as repository instructions.
+   > ❕ **Important:** Make sure the file name is correct. This specific filename is required for Copilot to recognize it.
 
 1. Add the following content to describe this educational project:
 
