@@ -60,19 +60,25 @@ Now let's create a specialized chat mode for brainstorming assignment ideas.
 
    <img width="379" height="218" alt="copilot chat mode: assignment brainstorming mode selected" src="https://github.com/user-attachments/assets/4effffa7-b8ef-4830-8050-9c777f9f0189" />
 
-1. Test the chat mode with questions a teacher might ask. Notice the different response format you will receive!
+1. Test the chat mode with questions a teacher might ask. Notice the different response format!
 
-   ```text
-   What assignment topics are missing from my current curriculum?
-   ```
+   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+   >
+   > ```prompt
+   > What assignment topics are missing from my current curriculum?
+   > ```
 
-   ```text
-   Suggest 3 advanced Python assignments for my students
-   ```
+   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+   >
+   > ```prompt
+   > Suggest 3 advanced Python assignments for my students.
+   > ```
 
-   ```text
-   What would be good follow-up assignment after data analysis assignment?
-   ```
+   > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
+   >
+   > ```prompt
+   > What would be good follow-up assignment after the data analysis assignment?
+   > ```
 
 1. Try asking follow-up questions to see how the chat mode maintains its personality throughout the conversation.
 
