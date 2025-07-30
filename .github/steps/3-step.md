@@ -19,9 +19,8 @@ Visual Studio Code will look for `*.prompt.md` files in `.github/prompts/` direc
 > Use prompt files to define repeatable tasks and workflows.
 >
 > When writing prompts focus on **WHAT** needs to be done. You can reference instructions for the **HOW**.
->
-> See more in [VS Code Docs: Prompt Files](https://code.visualstudio.com/docs/copilot/copilot-customization#_prompt-files-experimental)
 
+See the [VS Code Docs: Prompt Files](https://code.visualstudio.com/docs/copilot/copilot-customization#_prompt-files-experimental) page for more information.
 
 ### ⌨️ Activity: Create Assignment Prompt
 
