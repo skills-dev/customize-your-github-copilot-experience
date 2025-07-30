@@ -75,7 +75,7 @@ Now let's create targeted instructions specifically for assignment files to ensu
 
  <img width="492" height="376" alt="image" src="https://github.com/user-attachments/assets/dbf26be3-5940-4619-af4e-0a4380f16494" />
 
-1. Compare the suggested changes with the original file structure to see how Copilot applied your instructions. Then apply the suggested changes and check how the updated assignment now appears on the **Site Preview**.
+1. Compare the suggested changes with the original file structure to see how Copilot applied your instructions. Apply the suggested changes and check how the updated assignment now appears on the **Site Preview**.
 
 1. Commit both files to the `main` branch and push your changes to GitHub.
 
