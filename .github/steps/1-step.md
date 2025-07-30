@@ -37,7 +37,10 @@ To work with custom instructions, let's first set up our development environment
    - ✅ Your copy: `/{{full_repo_name}}`
    - ❌ Original: `/skills/customize-your-github-copilot-experience`
 
-1. Wait a moment for Visual Studio Code to load in your browser and for all extensions to install.
+1. Wait a moment for Visual Studio Code to load in your browser for all extensions to install.
+
+   - Ensure the **Live Preview** extension is activated.
+   - Ensure the **Python** extension is activated.
 
 1. Right-click on `index.html` and select **Show Preview** to see the website in action.
 
