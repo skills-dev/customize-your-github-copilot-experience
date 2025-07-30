@@ -22,7 +22,7 @@ Visual Studio Code will look for `*.prompt.md` files in `.github/prompts/` direc
 
 See the [VS Code Docs: Prompt Files](https://code.visualstudio.com/docs/copilot/copilot-customization#_prompt-files-experimental) page for more information.
 
-### ⌨️ Activity: Create Assignment Prompt
+### ⌨️ Activity: Create an Assignment Prompt
 
 Now let's create a reusable prompt that automates the entire assignment creation process. This is perfect for a prompt file because creating assignments involves multiple repetitive steps that follow the same pattern every time - exactly the kind of workflow that benefits from automation.
 
