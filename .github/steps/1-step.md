@@ -61,7 +61,7 @@ Now that you've explored the project, let's create custom instructions to help C
 
    > ❕ **Important:** Make sure the file name is correct. This specific filename is required for Copilot to recognize it.
 
-1. Add the following content to so Copilot understands the project's purpose, structure, and requirements:
+1. Add the following content so Copilot understands the project's purpose, structure, and requirements:
 
    ```markdown
    # Project Description
