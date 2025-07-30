@@ -41,14 +41,13 @@ To work with custom instructions, let's first set up our development environment
 
 1. Right-click on `index.html` and select **Show Preview** to see the website in action.
 
+   > ❕ **Important:** Keep the preview tab open as we'll be making edits to the website throughout the exercise and you can see the updates live.
+
 1. Explore the project structure:
    - Browse the `assets/` folder to see the website assets (CSS, JavaScript, images)
    - Look at the `assignments/` folder to understand the existing assignment formats
    - Review `index.html` in the root directory to see the main website structure
    - Check out `config.json` in the root directory to see how the assignments are set up
-
-> [!IMPORTANT]
-> Keep the preview tab open as we'll be making edits to the website throughout the exercise and you can see the updates live.
 
 ### ⌨️ Activity: Create Repository Copilot Instructions
 
