@@ -17,12 +17,12 @@ You will run this website in the first activity!
 
 Repository custom instructions let you provide Copilot with repository-specific guidance and preferences that help it understand your project context and standards. By creating a `.github/copilot-instructions.md` file, you can ensure that Copilot's suggestions consistently follow your project conventions and coding standards.
 
-The complete set of instructions will be automatically added to all requests that you submit to Copilot Chat in your repository.
+The complete set of instructions will be automatically added to all requests that you submit to Copilot in your repository.
 
 > [!TIP]
-> Keep instructions short and focused on project purpose, folder structure, coding standards, and key tools used.
->
-> See [GitHub Docs: Repository Custom Instructions](https://docs.github.com/en/copilot/how-tos/custom-instructions/adding-repository-custom-instructions-for-github-copilot) for more information.
+> Keep instructions short and focused on the "how" of the project. This could be purpose, folder structure, coding standards, key tools, expected formats, etc.
+
+See the [GitHub Docs: Repository Custom Instructions](https://docs.github.com/en/copilot/how-tos/custom-instructions/adding-repository-custom-instructions-for-github-copilot) page for more information.
 
 ### ⌨️ Activity: Explore the Educational Website Project
 
