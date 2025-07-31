@@ -2,14 +2,14 @@
 
 Now that you've established instructions for assignments, you want to streamline creating new assignments.
 
-Creating assignments is a repetetive task and involves multiple steps, a perfect scenario for a reusable prompt!
+Creating assignments is a repetitive task and involves multiple steps, a perfect scenario for a reusable prompt!
 
 - Creating the assignment
 - Updating the website configuration to load the new assignment
 
 ### 📖 Theory: Prompt Files
 
-Prompt files (`*.prompt.md`) are resusable prompts to simplify common and useful tasks in your project. They are selected in Copilot Chat using slash commands (`/`).
+Prompt files (`*.prompt.md`) are reusable prompts to simplify common and useful tasks in your project. They are selected in Copilot Chat using slash commands (`/`).
 
 They can reference other workspace files, prompt files, or instructions files by using Markdown-style links relative to the prompt file location.
 

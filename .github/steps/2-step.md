@@ -8,7 +8,7 @@ You want to make sure all your assignments follow the same pattern and structure
 
 Instruction files (`*.instructions.md`) provide Copilot targeted guidance for specific files or directories in your project.
 
-Unlike repository-wide instructions that apply everywhere, these files use the `applyTo` field in the [frontmatter](https://jekyllrb.com/docs/front-matter/) using [glob syntax](https://code.visualstudio.com/docs/editor/glob-patterns) to target specific files. This automatically applies the instructions whenever Copilot works on files matching that pattern. Alternatley, you can manually attach instructions using the **Add Context** button in Copilot Chat.
+Unlike repository-wide instructions that apply everywhere, these files use the `applyTo` field in the [frontmatter](https://jekyllrb.com/docs/front-matter/) using [glob syntax](https://code.visualstudio.com/docs/editor/glob-patterns) to target specific files. This automatically applies the instructions whenever Copilot works on files matching that pattern. Alternatively, you can manually attach instructions using the **Add Context** button in Copilot Chat.
 
 Visual Studio Code will look for `*.instructions.md` files in `.github/instructions/` directory by [default](vscode://settings/chat.instructionsFilesLocations).
 
@@ -71,7 +71,7 @@ Now let's create targeted instructions specifically for assignment files to ensu
    > Update this assignment file to follow the project standards and template structure
    > ```
 
-1. Observe how Copilot references the general project instructions and the assignement specific instruction files.
+1. Observe how Copilot references the general project instructions and the assignment specific instruction files.
 
    <img width="492" height="376" alt="screenshot of Copilot chat showing attached references" src="https://github.com/user-attachments/assets/dbf26be3-5940-4619-af4e-0a4380f16494" />
 
@@ -87,7 +87,7 @@ Now let's create targeted instructions specifically for assignment files to ensu
 <details>
 <summary>Having trouble? 🤷</summary><br/>
 
-- Make sure you commited both files to `main` branch:
+- Make sure you committed both files to `main` branch:
   - `.github/instructions/assignments.instructions.md`
   - `assignments/games-in-python/README.md`
 
