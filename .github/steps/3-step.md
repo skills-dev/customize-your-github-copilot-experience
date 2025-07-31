@@ -90,7 +90,7 @@ Now let's create a reusable prompt that automates the entire assignment creation
 
       </details>
 
-1. Verify the new assignment appears correctly on the website preview.
+1. Verify the new assignment appears in the assignments list on the website preview.
 
    <details>
    <summary>Assignment not showing? 🔍</summary>
