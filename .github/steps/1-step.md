@@ -108,6 +108,6 @@ Now that you've explored the project, let's create custom instructions to help C
 <summary>Having trouble? 🤷</summary><br/>
 
 - The `.github/copilot-instructions.md` file should be at the root of the `.github` folder
-- Make sure you commited and pushed the changes.
+- Make sure you committed and pushed the changes.
 
 </details>
