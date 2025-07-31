@@ -8,7 +8,7 @@ You want to make sure all your assignments follow the same pattern and structure
 
 Instruction files (`*.instructions.md`) provide Copilot targeted guidance for specific files or directories in your project.
 
-Unlike repository-wide instructions that apply everywhere, these files use the `applyTo` field in the [frontmatter](https://jekyllrb.com/docs/front-matter/) using [glob syntax](https://code.visualstudio.com/docs/editor/glob-patterns) to target specific files. This automatically applies the instructions whenever Copilot works on files matching that pattern. Alternately, you can manually attach instructions using the **Add Context** button in Copilot Chat.
+Unlike repository-wide instructions that apply everywhere, these files use the `applyTo` field in the [frontmatter](https://jekyllrb.com/docs/front-matter/) using [glob syntax](https://code.visualstudio.com/docs/editor/glob-patterns) to target specific files. This automatically applies the instructions whenever Copilot works on files matching that pattern. Alternatively, you can manually attach instructions using the **Add Context** button in Copilot Chat.
 
 Visual Studio Code will look for `*.instructions.md` files in `.github/instructions/` directory by [default](vscode://settings/chat.instructionsFilesLocations).
 
