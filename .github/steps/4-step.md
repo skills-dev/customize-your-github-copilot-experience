@@ -77,7 +77,7 @@ Now let's create a specialized chat mode for brainstorming assignment ideas.
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
    > ```prompt
-   > What would be good follow-up assignment after the data analysis assignment?
+   > What would be a good follow-up assignment after the data analysis assignment?
    > ```
 
 1. Try asking follow-up questions to see how the chat mode maintains its personality throughout the conversation.
