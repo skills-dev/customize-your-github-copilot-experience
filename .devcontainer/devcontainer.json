@@ -13,6 +13,9 @@
       "settings": {
         "livePreview.openPreviewTarget": "External Browser",
         
+        // This experimental (as of 2 Sept) feature disables the automatic context attachment of current active file in Agent Mode
+        "chat.implicitContext.suggestedContext": false,
+
         // These are defaults but keeping them here for clarity and explicitness
         "github.copilot.chat.codeGeneration.useInstructionFiles": true,
         "chat.promptFilesLocations": {
